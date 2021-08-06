@@ -34,6 +34,7 @@ print(uncurl.parse(seoul_acution_cur_ver))
 
 
 JSON_SAVE_PATH = '/home/fakeblocker/code/python/Auc/result/seoul'
+IMAGE_SAVE_PATH = '/home/fakeblocker/code/python/Auc/result/seoul/images'
 
 class SeoulAuctionRequester():
     def __init__(self):
@@ -131,7 +132,55 @@ class SeoulAuctionRequester():
         except Exception as e:
             print(e)
 
-c= SeoulAuctionRequester()
+    @staticmethod
+    def downloadArtImages(no):
+        try:
+            data_path = f'{JSON_SAVE_PATH}/{no}.json'
+            with open(data_path) as f:
+                data = json.load(f)
+            samples = data['tables']['LOTS']['rows']
+            for sample in samples:
+                lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
+                image_full_path_url = f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"
+                print(image_full_path_url)
+                response = requests.get(image_full_path_url,stream=True)
+                dest_folder = f'{i}'
+                if not os.path.exists(dest_folder):
+                    os.mkdir(dest_folder)
+                file_path = os.path.join(dest_folder,f'{lot_no}_{image_name}')
+                with open(file_path,'w') as f:
+                    for chunk in response:
+                        f.write(chunk)
+        except Exception as e:
+            print(e)
+            pass
+        
+
+
+#if __name__ =='__main__':
+#c= SeoulAuctionRequester()
 for i in range(1,653):
-    rr = c.getAuctionResult(i)
+    #rr = c.getAuctionResult(i)
+    SeoulAuctionRequester.downloadArtImages(i)
     time.sleep(1)
+
+
+i
+#https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
+samples = rr['tables']['LOTS']['rows']
+for sample in samples:
+    lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
+    image_full_path_url = f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"
+    print(image_full_path_url)
+    response = requests.get(image_full_path_url,stream=True)
+    dest_folder = f'{i}'
+    if not os.path.exists(dest_folder):
+        os.mkdir(dest_folder)
+    file_path = os.path.join(dest_folder,f'{lot_no}_{image_name}')
+    with open(file_path,'w') as f:
+        for chunk in response:
+            f.write(chunk)
+    
+
+# 'https://www.seoulauction.com/nas_img/front/plan0652/list/b144b083-0cdb-4b73-83c0-67b21e6e9f56.jpg'
+IMAGE_BASE_URL = 'https://www.seoulauction.com/nas_img/front/plan0652/list/b144b083-0cdb-4b73-83c0-67b21e6e9f56.jpg'
