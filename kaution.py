@@ -23,8 +23,8 @@ print(uncurl.parse(kauction_curl))
 
 import requests
 
-res = requests.post("https://www.k-auction.com/api/Auction/4/173",
-    data='{"price_from":0,"price_to":6000000,"page":1,"auc_kind":"4","auc_num":"173"}',
+res2 = requests.post("https://www.k-auction.com/api/Auction/4/173",
+    data='{"price_from":0,"price_to":6000000,"page":30,"auc_kind":"4","auc_num":"173"}',
     headers={
         "Accept": "*/*",
         "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -56,4 +56,5 @@ res = requests.post("https://www.k-auction.com/api/Auction/4/173",
     auth=(),
 ).json()
 from pprint import pprint
-pprint(res)
+import json
+open('kk.json','w').write(json.dumps(res2))

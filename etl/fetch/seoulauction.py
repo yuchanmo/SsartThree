@@ -172,8 +172,9 @@ image_full_path_urls = [f"https://www.seoulauction.com/nas_img{image_path}/{imag
 for u in image_full_path_urls:
     print(u)
     response = requests.get(u,stream=True)
-    print('success to access to image')
+    
     if response.status_code==200:
+        print('success to access to image')
         dest_folder = f'{IMAGE_SAVE_PATH}/{i}'
         if not os.path.exists(dest_folder):
             os.mkdir(dest_folder)
@@ -181,7 +182,9 @@ for u in image_full_path_urls:
         with open(file_path,'wb') as f:
             for chunk in response:
                 f.write(chunk)
+        continue
     else:
+        print('fail to access to image')
         pass
 
 
@@ -189,7 +192,7 @@ for u in image_full_path_urls:
 
 #if __name__ =='__main__':
 #c= SeoulAuctionRequester()
-for i in range(1,653):
+for i in range(23,653):
     #rr = c.getAuctionResult(i)
     SeoulAuctionRequester.downloadArtImages(i)
     time.sleep(1)
