@@ -141,20 +141,50 @@ class SeoulAuctionRequester():
             samples = data['tables']['LOTS']['rows']
             for sample in samples:
                 lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
-                image_full_path_url = f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"
-                print(image_full_path_url)
-                response = requests.get(image_full_path_url,stream=True)
-                dest_folder = f'{i}'
-                if not os.path.exists(dest_folder):
-                    os.mkdir(dest_folder)
-                file_path = os.path.join(dest_folder,f'{lot_no}_{image_name}')
-                with open(file_path,'w') as f:
-                    for chunk in response:
-                        f.write(chunk)
+                image_full_path_urls = [f"https://www.seoulauction.com/nas_img{image_path}/{image_name}",f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"]
+                for u in image_full_path_urls:
+                    print(u)
+                    response = requests.get(u,stream=True)
+                    print('success to access to image')
+                    if response.status_code==200:
+                        dest_folder = f'{IMAGE_SAVE_PATH}/{i}'
+                        if not os.path.exists(dest_folder):
+                            os.mkdir(dest_folder)
+                        file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_name}')
+                        with open(file_path,'wb') as f:
+                            for chunk in response:
+                                f.write(chunk)
+                    else:
+                        pass
         except Exception as e:
             print(e)
             pass
         
+i = 1
+data_path = f'{JSON_SAVE_PATH}/{i}.json'
+with open(data_path) as f:
+    data = json.load(f)
+samples = data['tables']['LOTS']['rows']
+sample = samples[0]
+#for sample in samples:
+lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
+image_full_path_urls = [f"https://www.seoulauction.com/nas_img{image_path}/{image_name}",f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"]
+for u in image_full_path_urls:
+    print(u)
+    response = requests.get(u,stream=True)
+    print('success to access to image')
+    if response.status_code==200:
+        dest_folder = f'{IMAGE_SAVE_PATH}/{i}'
+        if not os.path.exists(dest_folder):
+            os.mkdir(dest_folder)
+        file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_name}')
+        with open(file_path,'wb') as f:
+            for chunk in response:
+                f.write(chunk)
+    else:
+        pass
+
+
 
 
 #if __name__ =='__main__':
@@ -165,22 +195,22 @@ for i in range(1,653):
     time.sleep(1)
 
 
-i
-#https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
-samples = rr['tables']['LOTS']['rows']
-for sample in samples:
-    lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
-    image_full_path_url = f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"
-    print(image_full_path_url)
-    response = requests.get(image_full_path_url,stream=True)
-    dest_folder = f'{i}'
-    if not os.path.exists(dest_folder):
-        os.mkdir(dest_folder)
-    file_path = os.path.join(dest_folder,f'{lot_no}_{image_name}')
-    with open(file_path,'w') as f:
-        for chunk in response:
-            f.write(chunk)
+
+# #https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
+# samples = rr['tables']['LOTS']['rows']
+# for sample in samples:
+#     lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
+#     image_full_path_url = f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"
+#     print(image_full_path_url)
+#     response = requests.get(image_full_path_url,stream=True)
+#     dest_folder = f'{i}'
+#     if not os.path.exists(dest_folder):
+#         os.mkdir(dest_folder)
+#     file_path = os.path.join(dest_folder,f'{lot_no}_{image_name}')
+#     with open(file_path,'w') as f:
+#         for chunk in response:
+#             f.write(chunk)
     
 
 # 'https://www.seoulauction.com/nas_img/front/plan0652/list/b144b083-0cdb-4b73-83c0-67b21e6e9f56.jpg'
-IMAGE_BASE_URL = 'https://www.seoulauction.com/nas_img/front/plan0652/list/b144b083-0cdb-4b73-83c0-67b21e6e9f56.jpg'
+#IMAGE_BASE_URL = 'https://www.seoulauction.com/nas_img/front/plan0652/list/b144b083-0cdb-4b73-83c0-67b21e6e9f56.jpg'
