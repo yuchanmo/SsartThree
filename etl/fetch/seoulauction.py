@@ -33,8 +33,8 @@ import uncurl
 print(uncurl.parse(seoul_acution_cur_ver))
 
 
-JSON_SAVE_PATH = '/home/fakeblocker/code/python/Auc/result/seoul'
-IMAGE_SAVE_PATH = '/home/fakeblocker/code/python/Auc/result/seoul/images'
+JSON_SAVE_PATH = '/mnt/auc/seoul'
+IMAGE_SAVE_PATH = '/mnt/auc/seoul/images'
 
 class SeoulAuctionRequester():
     def __init__(self):
@@ -147,9 +147,9 @@ class SeoulAuctionRequester():
                     response = requests.get(u,stream=True)
                     print('success to access to image')
                     if response.status_code==200:
-                        dest_folder = f'{IMAGE_SAVE_PATH}/{i}'
+                        dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
                         if not os.path.exists(dest_folder):
-                            os.mkdir(dest_folder)
+                            os.makedirs(dest_folder,exist_ok=True)
                         file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_name}')
                         with open(file_path,'wb') as f:
                             for chunk in response:
@@ -160,42 +160,14 @@ class SeoulAuctionRequester():
             print(e)
             pass
         
-i = 1
-data_path = f'{JSON_SAVE_PATH}/{i}.json'
-with open(data_path) as f:
-    data = json.load(f)
-samples = data['tables']['LOTS']['rows']
-sample = samples[0]
-#for sample in samples:
-lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
-image_full_path_urls = [f"https://www.seoulauction.com/nas_img{image_path}/{image_name}",f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"]
-for u in image_full_path_urls:
-    print(u)
-    response = requests.get(u,stream=True)
-    
-    if response.status_code==200:
-        print('success to access to image')
-        dest_folder = f'{IMAGE_SAVE_PATH}/{i}'
-        if not os.path.exists(dest_folder):
-            os.mkdir(dest_folder)
-        file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_name}')
-        with open(file_path,'wb') as f:
-            for chunk in response:
-                f.write(chunk)
-        continue
-    else:
-        print('fail to access to image')
-        pass
-
-
 
 
 #if __name__ =='__main__':
 #c= SeoulAuctionRequester()
-for i in range(23,653):
+for i in range(79,653):
     #rr = c.getAuctionResult(i)
     SeoulAuctionRequester.downloadArtImages(i)
-    time.sleep(1)
+    time.sleep(0.1)
 
 
 

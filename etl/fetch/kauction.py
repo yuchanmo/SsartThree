@@ -52,7 +52,8 @@ curl 'https://www.k-auction.com/api/Auction/4/273' \
 
 print(uncurl.parse(fetch_kor_curl))
 
-JSON_SAVE_PATH = '/home/fakeblocker/code/python/Auc/result/k'
+JSON_SAVE_PATH = '/mnt/auc/k'
+IMAGE_SAVE_PATH = '/mnt/auc/k/images'
 
 class KAuctionRequester():
     def __init__(self):
@@ -133,8 +134,43 @@ class KAuctionRequester():
             print(e)
             raise e
 
-k = KAuctionRequester()
-for i in range(1,174):
-    print(f'[auction no {i}]')
-    tt = k.getAuctionResult(i)
+    #https://images.k-auction.com/www/Konline/Work/0273/27300301001_L.jpg
+    @staticmethod
+    def downloadArtImages(no):
+        try:
+            data_path = f'{JSON_SAVE_PATH}/{no}.json'
+            with open(data_path) as f:
+                data = json.load(f)
+            samples = data['kor']
+            for sample in samples:
+                lot_no,image_path = sample['lot_num'],sample['img_file_name']
+                no4 = ('0000'+str(no))[-4:]
+                u = f'https://images.k-auction.com/www/Konline/Work/{no4}/{image_path}'                
+                print(u)
+                response = requests.get(u,stream=True)
+                print('success to access to image')
+                if response.status_code==200:
+                    dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
+                    if not os.path.exists(dest_folder):
+                        os.makedirs(dest_folder,exist_ok=True)
+                    file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_path}')
+                    with open(file_path,'wb') as f:
+                        for chunk in response:
+                            f.write(chunk)
+                else:
+                    pass
+        except Exception as e:
+            print(e)
+            pass
 
+k = KAuctionRequester()
+for i in range(1,173):
+    print(f'[auction no {i}]')
+    KAuctionRequester.downloadArtImages(i)
+
+# KAuctionRequester.downloadArtImages(273)
+
+# no=273
+# dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
+# if not os.path.exists(dest_folder):
+#     os.makedirs(dest_folder,exist_ok=True)
