@@ -143,9 +143,9 @@ class SeoulAuctionRequester():
                 lot_no,image_path,image_name = sample['LOT_NO'],sample['LOT_IMG_PATH'],sample['LOT_IMG_NAME']
                 image_full_path_urls = [f"https://www.seoulauction.com/nas_img{image_path}/{image_name}",f"https://www.seoulauction.com/nas_img{image_path}/list/{image_name}"]
                 for u in image_full_path_urls:
-                    print(u)
+                    #print(u)
                     response = requests.get(u,stream=True)
-                    print('success to access to image')
+                    #print('success to access to image')
                     if response.status_code==200:
                         dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
                         if not os.path.exists(dest_folder):
@@ -164,7 +164,8 @@ class SeoulAuctionRequester():
 
 #if __name__ =='__main__':
 #c= SeoulAuctionRequester()
-for i in range(79,653):
+for i in range(386,653):
+    print(f'[seoul auction no {i}]')
     #rr = c.getAuctionResult(i)
     SeoulAuctionRequester.downloadArtImages(i)
     time.sleep(0.1)

@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "20.85.245.228",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "auction",
+            "username": "sa",
+            "password": "1",
+            "database": "auction"
+        }
+    ]
+}

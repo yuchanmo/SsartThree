@@ -146,9 +146,9 @@ class KAuctionRequester():
                 lot_no,image_path = sample['lot_num'],sample['img_file_name']
                 no4 = ('0000'+str(no))[-4:]
                 u = f'https://images.k-auction.com/www/Konline/Work/{no4}/{image_path}'                
-                print(u)
+                #print(u)
                 response = requests.get(u,stream=True)
-                print('success to access to image')
+                #print('success to access to image')
                 if response.status_code==200:
                     dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
                     if not os.path.exists(dest_folder):
@@ -164,8 +164,8 @@ class KAuctionRequester():
             pass
 
 k = KAuctionRequester()
-for i in range(1,173):
-    print(f'[auction no {i}]')
+for i in range(174,274):
+    print(f'[kauction no {i}]')
     KAuctionRequester.downloadArtImages(i)
 
 # KAuctionRequester.downloadArtImages(273)

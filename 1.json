@@ -1,0 +1,2491 @@
+{
+    "resultCode": 0,
+    "resultMessage": null,
+    "resultDescription": null,
+    "tables": {
+        "EXCH": {
+            "columns": {
+                "SALE_NO": "long",
+                "BASE_CURR_CD": "string",
+                "EXCH_CURR_CD": "string",
+                "BASE_PRICE": "long",
+                "RATE": "double",
+                "REG_DT": "datetime",
+                "REG_EMP_NO": "long",
+                "MOD_DT": "datetime",
+                "MOD_EMP_NO": "long"
+            },
+            "rows": [
+                {
+                    "RATE": 0,
+                    "REG_DT": 1212850714000,
+                    "REG_EMP_NO": 0,
+                    "MOD_EMP_NO": null,
+                    "SALE_NO": 1,
+                    "MOD_DT": null,
+                    "BASE_CURR_CD": "KRW",
+                    "BASE_PRICE": 1,
+                    "EXCH_CURR_CD": "HKD"
+                },
+                {
+                    "RATE": 0,
+                    "REG_DT": 1212850714000,
+                    "REG_EMP_NO": 0,
+                    "MOD_EMP_NO": null,
+                    "SALE_NO": 1,
+                    "MOD_DT": null,
+                    "BASE_CURR_CD": "KRW",
+                    "BASE_PRICE": 1,
+                    "EXCH_CURR_CD": "USD"
+                }
+            ]
+        },
+        "HASHTAG": {
+            "columns": {
+                "LOT_TAG": "string"
+            },
+            "rows": []
+        },
+        "CATEGORY": {
+            "columns": {
+                "CD_ID": "string",
+                "CD_NM": "string",
+                "CD_NM_EN": "string"
+            },
+            "rows": [
+                {
+                    "CD_NM": "근현대",
+                    "CD_NM_EN": "Contemporary Art",
+                    "CD_ID": "contemporary"
+                },
+                {
+                    "CD_NM": "기타",
+                    "CD_NM_EN": "Etc Art",
+                    "CD_ID": "etc_art"
+                }
+            ]
+        },
+        "MATERIAL": {
+            "columns": {
+                "CD_ID": "string",
+                "CD_NM": "string",
+                "CD_NM_EN": "string"
+            },
+            "rows": [
+                {
+                    "CD_NM": "장지에 먹, 분채",
+                    "CD_NM_EN": "ink & color on paper",
+                    "CD_ID": "464"
+                },
+                {
+                    "CD_NM": "장지위에 분채, 석채",
+                    "CD_NM_EN": "natural color on Korean paper, janggi",
+                    "CD_ID": "1206"
+                },
+                {
+                    "CD_NM": "종이에 먹",
+                    "CD_NM_EN": "ink on paper",
+                    "CD_ID": "4906"
+                },
+                {
+                    "CD_NM": "종이에 아크릴릭",
+                    "CD_NM_EN": "acrylic on paper",
+                    "CD_ID": "4858"
+                },
+                {
+                    "CD_NM": "종이에 유채",
+                    "CD_NM_EN": "oil on paper",
+                    "CD_ID": "3646"
+                },
+                {
+                    "CD_NM": "종이위에 아크릴릭, 잉크, 콘테, 크레용",
+                    "CD_NM_EN": "conte, ink, acrylic, on paper",
+                    "CD_ID": "473"
+                },
+                {
+                    "CD_NM": "종이위에 제쏘, 핀, 솜, 커피물",
+                    "CD_NM_EN": "coffee and needles on cotton - plaster paper on canvas",
+                    "CD_ID": "471"
+                },
+                {
+                    "CD_NM": "캔버스에 그을린 책",
+                    "CD_NM_EN": "varnished & burnt book on canvas",
+                    "CD_ID": "467"
+                },
+                {
+                    "CD_NM": "캔버스에 유채",
+                    "CD_NM_EN": "oil on canvas",
+                    "CD_ID": "191"
+                },
+                {
+                    "CD_NM": "캔버스에 혼합재료",
+                    "CD_NM_EN": "mixed media on canvas",
+                    "CD_ID": "1472"
+                },
+                {
+                    "CD_NM": "패널위에 책 꼴라쥬",
+                    "CD_NM_EN": "pieces of book, burnt paper on panel",
+                    "CD_ID": "466"
+                },
+                {
+                    "CD_NM": "한지에 수묵채색",
+                    "CD_NM_EN": "ink on Korean paper",
+                    "CD_ID": "468"
+                }
+            ]
+        },
+        "LOTS": {
+            "columns": {
+                "SALE_NO": "long",
+                "LOT_NO": "long",
+                "SALE_KIND_CD": "string",
+                "SALE_TH": "string",
+                "SALE_TITLE_JSON": null,
+                "SALE_FROM_DT": "datetime",
+                "SALE_TO_DT": "datetime",
+                "CURR_CD": "string",
+                "SALE_STAT_CD": "string",
+                "STAT_CD": "string",
+                "FROM_DT": "datetime",
+                "TO_DT": "datetime",
+                "START_PRICE": "long",
+                "GROW_PRICE": "long",
+                "TITLE_JSON": null,
+                "STITLE_JSON": null,
+                "EDITION": "string",
+                "MAKE_YEAR_JSON": null,
+                "SIGN_INFO_JSON": null,
+                "ARTIST_NAME_JSON": null,
+                "BORN_YEAR": "string",
+                "DIE_YEAR": "string",
+                "MATE_NM": "string",
+                "MATE_NM_EN": "string",
+                "MATE_NM_CN": "string",
+                "LOT_IMG_PATH": "string",
+                "LOT_IMG_NAME": "string",
+                "LAST_PRICE": "long",
+                "LAST_CUST_ID": "string",
+                "SOLD_YN": "string",
+                "END_YN": "string",
+                "BID_CNT": "long",
+                "MY_BID_CNT": "long",
+                "MY_BID_SALE_CNT": "long",
+                "MY_BID_AUTO_CNT": "long",
+                "IS_WIN": "string",
+                "EXPE_PRICE_INQ_YN": "string",
+                "EXPE_PRICE_FROM_JSON": null,
+                "EXPE_PRICE_TO_JSON": null,
+                "LOT_SIZE_JSON": "string",
+                "CLOSE_YN": "string",
+                "IMG_DISP_YN": "string",
+                "DB_NOW": "datetime",
+                "CR_INTE_LOT": "string",
+                "COND_RPT_JSON": null,
+                "INTE_LOT_DEL": "string",
+                "CURR_LOT_NO": "long",
+                "GUARANTEE_YN": "string",
+                "WINE_YN": "string",
+                "FRAME_CD": "string",
+                "ZEROBASE_PRICE_YN": "string"
+            },
+            "rows": [
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 300000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "natural color on Korean paper, janggi",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "장지위에 분채, 석채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 1,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 33.3,
+                            "SIZE2": 24.2,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "아침/ Morning. 1998",
+                        "ko": "아침/ Morning. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 250000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000100.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Cho, Kyungjoo",
+                        "ko": "조경주",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 800000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "natural color on Korean paper, janggi",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "장지위에 분채, 석채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 2,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 45.7,
+                            "SIZE2": 53.2,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "장미의 하루/ Day of rose, 1998",
+                        "ko": "장미의 하루/ Day of rose, 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 600000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000200.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Cho, Kyungjoo",
+                        "ko": "조경주",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1500000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "ink & color on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "장지에 먹, 분채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 3,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 72.8,
+                            "SIZE2": 61.1,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "어느 가을날/ One autumn day, 1998",
+                        "ko": "어느 가을날/ One autumn day, 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 800000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000300.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Cho, Kyungjoo",
+                        "ko": "조경주",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 4000000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "mixed media on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 혼합재료",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 4,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 180,
+                            "SIZE2": 100,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "우연한 만남, 푸른색/ Encounter : Blue, 1997",
+                        "ko": "우연한 만남, 푸른색/ Encounter : Blue, 1997"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 3000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000400.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Seo, Hyunjin",
+                        "ko": "서현진",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1997",
+                        "ko": "1997",
+                        "zh": "1997"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 4000000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "mixed media on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 혼합재료",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 5,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 180,
+                            "SIZE2": 100,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "우연한 만남, 흑백/ Encounter : Black & White, 1997",
+                        "ko": "우연한 만남, 흑백/ Encounter : Black & White, 1997"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 3000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000500.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Seo, Hyunjin",
+                        "ko": "서현진",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1997",
+                        "ko": "1997",
+                        "zh": "1997"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 800000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "pieces of book, burnt paper on panel",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "패널위에 책 꼴라쥬",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 6,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 65,
+                            "SIZE2": 65,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "순환/ Circulation. 1997",
+                        "ko": "순환/ Circulation. 1997"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 600000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000600.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Jeong, Doo hwa",
+                        "ko": "정두화",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1997",
+                        "ko": "1997",
+                        "zh": "1997"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 2000000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "varnished & burnt book on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 그을린 책",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 7,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 125,
+                            "SIZE2": 145,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "역사 속의 시간/ Time in the history, 1997",
+                        "ko": "역사 속의 시간/ Time in the history, 1997"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1500000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000700.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Jeong, Doo hwa",
+                        "ko": "정두화",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1200000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "ink on Korean paper",
+                    "DIE_YEAR": "",
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "한지에 수묵채색",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 8,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 88,
+                            "SIZE2": 118,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "황혼/ Twilight. 1998",
+                        "ko": "황혼/ Twilight. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 900000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": "1969",
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000800.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Kim DukKi",
+                        "ko": "김덕기",
+                        "zh": "金悳冀"
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1200000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "ink on Korean paper",
+                    "DIE_YEAR": "",
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "한지에 수묵채색",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 9,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 88,
+                            "SIZE2": 118,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "형제/ Brothers. 1998",
+                        "ko": "형제/ Brothers. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 1040000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": "1969",
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020000900.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Kim DukKi",
+                        "ko": "김덕기",
+                        "zh": "金悳冀"
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1200000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "ink on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이에 먹",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 10,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 54,
+                            "SIZE2": 48,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "희망/ Hope. 1998",
+                        "ko": "희망/ Hope. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 1150000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": "1961",
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": null,
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001000.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Kang, Misun",
+                        "ko": "강미선",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1800000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "ink on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이에 먹",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 11,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 82,
+                            "SIZE2": 40,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "나머지 한쪽/ The other one. 1998",
+                        "ko": "나머지 한쪽/ The other one. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1600000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 2100000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": "1961",
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": null,
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001100.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Kang, Misun",
+                        "ko": "강미선",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 600000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "oil on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 유채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 12,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 45.5,
+                            "SIZE2": 38,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "Memories. 1998",
+                        "ko": "추억. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 400000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 310000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": "",
+                    "SIGN_INFO_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001200.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Lee JongA",
+                        "ko": "이종아",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1000000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "oil on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 유채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 13,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 91,
+                            "SIZE2": 72.7,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "Invitation. 1998",
+                        "ko": "초대. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 800000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": "",
+                    "SIGN_INFO_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001300.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Lee JongA",
+                        "ko": "이종아",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 700000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "coffee and needles on cotton - plaster paper on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이위에 제쏘, 핀, 솜, 커피물",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 14,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 34,
+                            "SIZE2": 24,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "이동/ To Move l. 1998",
+                        "ko": "이동/ To Move l. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 500000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001400.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Park, Sangnam",
+                        "ko": "박상남",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 700000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "coffee and needles on cotton - plaster paper on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이위에 제쏘, 핀, 솜, 커피물",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 15,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 34,
+                            "SIZE2": 24,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "아동∥/ To Move ∥, 1998",
+                        "ko": "아동∥/ To Move ∥, 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 500000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001500.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Park, Sangnam",
+                        "ko": "박상남",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1500000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "oil on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 유채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 16,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 100,
+                            "SIZE2": 100,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "푸른 외곽순환도로/ Blue Peripheral. 1996",
+                        "ko": "푸른 외곽순환도로/ Blue Peripheral. 1996"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1300000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 2100000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001600.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Im You",
+                        "ko": "임유 ",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1996",
+                        "ko": "1996",
+                        "zh": "1996"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1500000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "oil on canvas",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "캔버스에 유채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 17,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 100,
+                            "SIZE2": 100,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "붉은 외곽순환도로/ Red Peripheral. 1996",
+                        "ko": "붉은 외곽순환도로/ Red Peripheral. 1996"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 13000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 1200000,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001700.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Im You",
+                        "ko": "임유 ",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1996",
+                        "ko": "1996",
+                        "zh": "1996"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 700000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "oil on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이에 유채",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 18,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 35,
+                            "SIZE2": 51,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "떠나는 풍경/ Floating Landscape. 1989",
+                        "ko": "떠나는 풍경/ Floating Landscape. 1989"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 500000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001800.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Cho Mihee",
+                        "ko": "조미희",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1989",
+                        "ko": "1989",
+                        "zh": "1989"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 1200000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "ink on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이에 먹",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 19,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 121,
+                            "SIZE2": 60,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "탯줄/ Umbilical Cord. 1994",
+                        "ko": "탯줄/ Umbilical Cord. 1994"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 1000000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {},
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": null,
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020001900.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Cho Mihee",
+                        "ko": "조미희",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1994",
+                        "ko": "1994",
+                        "zh": "1994"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 900000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "acrylic on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이에 아크릴릭",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 20,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 100,
+                            "SIZE2": 72,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "무정부주의자의 절규/ Exclamation of anarchist. 1998",
+                        "ko": "무정부주의자의 절규/ Exclamation of anarchist. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 700000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": null,
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020002000.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Park Dongjin",
+                        "ko": "박동진",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                },
+                {
+                    "EXPE_PRICE_TO_JSON": {
+                        "HKD": 0,
+                        "KRW": 900000,
+                        "USD": 0
+                    },
+                    "SALE_NO": 1,
+                    "MATE_NM_EN": "conte, ink, acrylic, on paper",
+                    "DIE_YEAR": null,
+                    "COND_RPT_JSON": {},
+                    "MATE_NM": "종이위에 아크릴릭, 잉크, 콘테, 크레용",
+                    "STITLE_JSON": {},
+                    "LOT_NO": 21,
+                    "SALE_FROM_DT": 909302400000,
+                    "LOT_SIZE_JSON": [
+                        {
+                            "UNIT_CD": "cm",
+                            "SIZE1": 100,
+                            "SIZE2": 72,
+                            "SIZE3": 0,
+                            "CANVAS": 0,
+                            "DIAMETER_YN": "N",
+                            "PREFIX": "",
+                            "SUFFIX": "",
+                            "MIX_CD": "height",
+                            "CANVAS_EXT_YN": ""
+                        }
+                    ],
+                    "TITLE_JSON": {
+                        "en": "무정부주의자의 숨결/ Breathing of anarchist. 1998",
+                        "ko": "무정부주의자의 숨결/ Breathing of anarchist. 1998"
+                    },
+                    "SALE_KIND_CD": "main",
+                    "IMG_DISP_YN": "Y",
+                    "GUARANTEE_YN": "Y",
+                    "EXPE_PRICE_FROM_JSON": {
+                        "HKD": 0,
+                        "KRW": 700000,
+                        "USD": 0
+                    },
+                    "END_YN": "Y",
+                    "FROM_DT": 909302400000,
+                    "LAST_PRICE": 0,
+                    "MY_BID_CNT": 0,
+                    "MY_BID_SALE_CNT": 0,
+                    "BID_CNT": 0,
+                    "BORN_YEAR": null,
+                    "DB_NOW": 1628229679000,
+                    "STAT_CD": "entry",
+                    "EXPE_PRICE_INQ_YN": "N",
+                    "EDITION": null,
+                    "SIGN_INFO_JSON": {
+                        "en": "",
+                        "ko": "",
+                        "zh": ""
+                    },
+                    "MY_BID_AUTO_CNT": 0,
+                    "INTE_LOT_DEL": "Y",
+                    "TO_DT": 909302400000,
+                    "CURR_CD": "KRW",
+                    "SALE_TH": "2",
+                    "IS_WIN": "N",
+                    "MATE_NM_CN": "",
+                    "SALE_TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "FRAME_CD": "none",
+                    "LAST_CUST_ID": null,
+                    "LOT_IMG_PATH": "/front/main0001",
+                    "LOT_IMG_NAME": "MA00020002100.jpg",
+                    "SALE_STAT_CD": "open",
+                    "WINE_YN": "N",
+                    "ARTIST_NAME_JSON": {
+                        "en": "Park Dongjin",
+                        "ko": "박동진",
+                        "zh": ""
+                    },
+                    "MAKE_YEAR_JSON": {
+                        "en": "1998",
+                        "ko": "1998",
+                        "zh": "1998"
+                    },
+                    "GROW_PRICE": 0,
+                    "START_PRICE": 0,
+                    "CURR_LOT_NO": null,
+                    "CLOSE_YN": "Y",
+                    "SOLD_YN": "N",
+                    "CR_INTE_LOT": "N",
+                    "SALE_TO_DT": 909302400000,
+                    "ZEROBASE_PRICE_YN": "N"
+                }
+            ]
+        },
+        "LOT_CNT": {
+            "columns": {
+                "CNT": "long"
+            },
+            "rows": [
+                {
+                    "CNT": 21
+                }
+            ]
+        },
+        "CERT": {
+            "columns": {
+                "CNT": "long",
+                "HP": "string"
+            },
+            "rows": [
+                {
+                    "CNT": 0,
+                    "HP": "010-9140-7112"
+                }
+            ]
+        },
+        "SALE": {
+            "columns": {
+                "SALE_NO": "long",
+                "SALE_KIND_CD": "string",
+                "SALE_TH": "string",
+                "SALE_TH_DSP": "string",
+                "TITLE_JSON": null,
+                "SALE_TITLE_KO": "string",
+                "SALE_TITLE_EN": "string",
+                "FROM_DT": "datetime",
+                "TO_DT": "datetime",
+                "CURR_CD": "string",
+                "CMMT_JSON": null,
+                "PLACE_JSON": null,
+                "STAT_CD": "string",
+                "DB_NOW": "datetime",
+                "PREVIEW_JSON": "string",
+                "END_DT": "datetime",
+                "MIN_KRW_EXPE_PRICE": "long",
+                "MAX_KRW_EXPE_PRICE": "long",
+                "MIN_HKD_EXPE_PRICE": "long",
+                "MAX_HKD_EXPE_PRICE": "long",
+                "MIN_USD_EXPE_PRICE": "long",
+                "MAX_USD_EXPE_PRICE": "long",
+                "PREV_SALE_NO": "long",
+                "NEXT_SALE_NO": "long",
+                "CLOSE_YN": "string",
+                "SALE_IMG_PATH": "string",
+                "SALE_IMG_NAME": "string",
+                "AUTO_BID_REQ_CLOSE_DT": "datetime",
+                "NOTICE_JSON": null,
+                "NOTICE_DTL_JSON": null,
+                "LIVE_BID_YN": "string",
+                "LIVE_BID_DT": "datetime",
+                "WRITE_NO": "long"
+            },
+            "rows": [
+                {
+                    "MIN_KRW_EXPE_PRICE": 250000,
+                    "CMMT_JSON": {
+                        "ko": "신진유망작가 경매<br/>",
+                        "zh": ""
+                    },
+                    "PREV_SALE_NO": null,
+                    "MIN_HKD_EXPE_PRICE": 0,
+                    "TO_DT": 909302400000,
+                    "LIVE_BID_DT": null,
+                    "SALE_NO": 1,
+                    "CURR_CD": "KRW",
+                    "LIVE_BID_YN": "N",
+                    "SALE_IMG_NAME": null,
+                    "NOTICE_JSON": null,
+                    "SALE_TH": "2",
+                    "WRITE_NO": null,
+                    "MIN_USD_EXPE_PRICE": 0,
+                    "TITLE_JSON": {
+                        "en": "",
+                        "ko": "아트마켓 경매",
+                        "zh": ""
+                    },
+                    "END_DT": 909302400000,
+                    "MAX_USD_EXPE_PRICE": 0,
+                    "NOTICE_DTL_JSON": null,
+                    "SALE_KIND_CD": "main",
+                    "SALE_TITLE_KO": "아트마켓 경매",
+                    "PLACE_JSON": {
+                        "en": "SeoulAuction, Seoul",
+                        "ko": "평창동 가나아트센터",
+                        "zh": ""
+                    },
+                    "FROM_DT": 909302400000,
+                    "PREVIEW_JSON": [
+                        {
+                            "PLACE_JSON": {
+                                "ko": "평창동 가나아트센터"
+                            },
+                            "ADDR_JSON": {},
+                            "FROM_DT": "1998-10-23",
+                            "TO_DT": "1998-10-25",
+                            "FROM_TIME": "10:00:00",
+                            "TO_TIME": "17:00:00",
+                            "MAP_URL": ""
+                        },
+                        {
+                            "PLACE_JSON": {
+                                "ko": "평창동 가나아트센터"
+                            },
+                            "ADDR_JSON": {},
+                            "FROM_DT": "1998-10-23",
+                            "TO_DT": "1998-10-25",
+                            "FROM_TIME": "10:00:00",
+                            "TO_TIME": "17:00:00",
+                            "MAP_URL": ""
+                        }
+                    ],
+                    "MAX_KRW_EXPE_PRICE": 4000000,
+                    "SALE_TITLE_EN": "",
+                    "AUTO_BID_REQ_CLOSE_DT": 909216000000,
+                    "CLOSE_YN": "Y",
+                    "MAX_HKD_EXPE_PRICE": 0,
+                    "NEXT_SALE_NO": 656,
+                    "DB_NOW": 1628229679000,
+                    "SALE_IMG_PATH": null,
+                    "STAT_CD": "open",
+                    "SALE_TH_DSP": "nd"
+                }
+            ]
+        },
+        "CUST_INFO": {
+            "columns": {
+                "CUST_NO": "long",
+                "LOGIN_ID": "string",
+                "PASSWD": "string",
+                "JOIN_KIND_CD": "string",
+                "CUST_NAME": "string",
+                "SEX_CD": "string",
+                "CUST_KIND_CD": "string",
+                "BORN_DT": "datetime",
+                "TEL": "string",
+                "FAX": "string",
+                "HP": "string",
+                "EMAIL": "string",
+                "LOCAL_KIND_CD": "string",
+                "NATION_CD": "string",
+                "ADDR_OLD_YN": "string",
+                "ZIPNO": "string",
+                "ADDR": "string",
+                "ADDR_DTL": "string",
+                "DELI_ADDR_OLD_YN": "string",
+                "DELI_ZIPNO": "string",
+                "DELI_ADDR": "string",
+                "DELI_ADDR_DTL": "string",
+                "DELI_RET_YN": "string",
+                "DELI_RET_REASON": "string",
+                "EMP_NO": "long",
+                "EMP_REQ": "string",
+                "LEVEL_CD": "string",
+                "SEND_WAY_CD": "string",
+                "STAT_CD": "string",
+                "LEAVE_REASON": "string",
+                "LEAVE_DT": "datetime",
+                "BANK_NAME": "string",
+                "BANK_ACCT": "string",
+                "SWIFT_CODE": "string",
+                "JOB": "string",
+                "COMP_NAME": "string",
+                "COMP_DEPT": "string",
+                "COMP_POS": "string",
+                "COMP_OWNER": "string",
+                "COMP_NO": "string",
+                "COMP_MAN_NAME": "string",
+                "WEDD_KIND_CD": "string",
+                "WEDD_DT": "datetime",
+                "MEMO": "string",
+                "GIFT_LEVEL_CD": "string",
+                "GIFT_LEVEL_REMARK": "string",
+                "GIFT_DELI_KIND": "string",
+                "SEND_NICK": "string",
+                "BARCODE": "string",
+                "FORE_BID_REQ_YN": "string",
+                "FORE_BID_REQ_DATE": "datetime",
+                "FORE_BID_YN": "string",
+                "FORE_BID_DATE": "datetime",
+                "FORE_ONLINE_BID_REQ_YN": "string",
+                "FORE_ONLINE_BID_REQ_DATE": "datetime",
+                "FORE_ONLINE_BID_YN": "string",
+                "FORE_ONLINE_BID_DATE": "datetime",
+                "FORE_CERT_CODE": "string",
+                "REG_DT": "datetime",
+                "REG_EMP_NO": "long",
+                "MOD_DT": "datetime",
+                "MOD_EMP_NO": "long",
+                "MOD_MEMO": "string",
+                "DEL_YN": "string",
+                "EMP_GB": "string",
+                "READ_YN": "string",
+                "READ_YN_DT": "datetime",
+                "READ_YN_EMP_NO": "long",
+                "SEND_FROM_DT": "datetime",
+                "SEND_TO_DT": "datetime",
+                "SEND_REMARK": "string",
+                "SEND_INFO_QTY": "long",
+                "BID_FORBID": "string",
+                "BID_FORBID_NOTICE": "string",
+                "MARKETING_CHK": "string",
+                "MARKETING_CHK_MOD_DT": "datetime",
+                "MARKETING_CHK_MOD_EMP_NO": "long",
+                "EMP_MEMO": "string",
+                "ACCOUNT_CUST_CD": "long",
+                "PASSWD_RESET_YN": "string",
+                "SPECIAL_CUST_YN": "string",
+                "MEMBERSHIP_NM": "string",
+                "MEMBERSHIP_YN": "string",
+                "PUSH_WAY_JSON": "string",
+                "INTE_AREA_JSON": "string"
+            },
+            "rows": [
+                {
+                    "FORE_BID_REQ_YN": "N",
+                    "COMP_DEPT": null,
+                    "FORE_CERT_CODE": null,
+                    "BID_FORBID": "N",
+                    "HP": "010-9140-7112",
+                    "MARKETING_CHK": "Y",
+                    "GIFT_LEVEL_REMARK": null,
+                    "FORE_ONLINE_BID_REQ_YN": "N",
+                    "NATION_CD": "KR",
+                    "MEMBERSHIP_NM": "준회원",
+                    "MEMO": "고객일괄 자동 변경처리(고객관리) 2021-08-04 18:31:59",
+                    "EMP_NO": 367,
+                    "FORE_BID_REQ_DATE": null,
+                    "BARCODE": null,
+                    "CUST_KIND_CD": "person",
+                    "GIFT_DELI_KIND": null,
+                    "SEND_FROM_DT": null,
+                    "ADDR": "서울특별시 송파구 송이로36길 56 (문정동)",
+                    "SEND_NICK": null,
+                    "COMP_MAN_NAME": null,
+                    "FAX": "",
+                    "FORE_BID_DATE": null,
+                    "FORE_BID_YN": "N",
+                    "WEDD_KIND_CD": null,
+                    "LOCAL_KIND_CD": "korean",
+                    "BANK_ACCT": null,
+                    "REG_EMP_NO": null,
+                    "READ_YN_DT": null,
+                    "BORN_DT": "1984-09-10",
+                    "LEAVE_REASON": null,
+                    "PUSH_WAY_JSON": [
+                        "email",
+                        "sms"
+                    ],
+                    "MEMBERSHIP_YN": "N",
+                    "MOD_DT": null,
+                    "SEX_CD": "male",
+                    "SEND_REMARK": null,
+                    "DELI_RET_YN": "N",
+                    "READ_YN_EMP_NO": null,
+                    "CUST_NAME": "모유찬",
+                    "ACCOUNT_CUST_CD": null,
+                    "EMP_REQ": null,
+                    "PASSWD": "moj8rNng0oXa46lCMS6w0Q==",
+                    "EMP_MEMO": null,
+                    "COMP_POS": null,
+                    "STAT_CD": "normal",
+                    "COMP_OWNER": null,
+                    "MARKETING_CHK_MOD_DT": null,
+                    "DELI_ADDR_DTL": "401호",
+                    "JOIN_KIND_CD": "online",
+                    "DELI_ZIPNO": "05809",
+                    "MOD_MEMO": null,
+                    "SWIFT_CODE": null,
+                    "JOB": null,
+                    "BID_FORBID_NOTICE": null,
+                    "ZIPNO": "05809",
+                    "ADDR_OLD_YN": "N",
+                    "REG_DT": 1627567972000,
+                    "TEL": "",
+                    "COMP_NAME": null,
+                    "EMAIL": "mojjijji@gmail.co@gmail.com",
+                    "DELI_RET_REASON": null,
+                    "PASSWD_RESET_YN": "N",
+                    "INTE_AREA_JSON": [
+                        "foreign_art",
+                        "local_contemp"
+                    ],
+                    "GIFT_LEVEL_CD": null,
+                    "LOGIN_ID": "densetsu",
+                    "DELI_ADDR_OLD_YN": "N",
+                    "CUST_NO": 115331,
+                    "MOD_EMP_NO": null,
+                    "SEND_WAY_CD": "normal",
+                    "DELI_ADDR": "서울특별시 송파구 송이로36길 56 (문정동)",
+                    "SPECIAL_CUST_YN": "N",
+                    "SEND_TO_DT": null,
+                    "BANK_NAME": null,
+                    "WEDD_DT": null,
+                    "SEND_INFO_QTY": null,
+                    "ADDR_DTL": "401호",
+                    "EMP_GB": "N",
+                    "FORE_ONLINE_BID_YN": "N",
+                    "COMP_NO": null,
+                    "FORE_ONLINE_BID_DATE": null,
+                    "DEL_YN": "N",
+                    "LEAVE_DT": null,
+                    "LEVEL_CD": null,
+                    "FORE_ONLINE_BID_REQ_DATE": null,
+                    "MARKETING_CHK_MOD_EMP_NO": null,
+                    "READ_YN": "N"
+                }
+            ]
+        },
+        "ARTIST": {
+            "columns": {
+                "CD_ID": "long",
+                "CD_NM": "string",
+                "CD_NM_EN": "string"
+            },
+            "rows": [
+                {
+                    "CD_NM": "강미선",
+                    "CD_NM_EN": "Kang, Misun",
+                    "CD_ID": 1080
+                },
+                {
+                    "CD_NM": "김덕기",
+                    "CD_NM_EN": "Kim DukKi",
+                    "CD_ID": 1942
+                },
+                {
+                    "CD_NM": "박동진",
+                    "CD_NM_EN": "Park Dongjin",
+                    "CD_ID": 4174
+                },
+                {
+                    "CD_NM": "박상남",
+                    "CD_NM_EN": "Park, Sangnam",
+                    "CD_ID": 4219
+                },
+                {
+                    "CD_NM": "서현진",
+                    "CD_NM_EN": "Seo, Hyunjin",
+                    "CD_ID": 5204
+                },
+                {
+                    "CD_NM": "이종아",
+                    "CD_NM_EN": "Lee JongA",
+                    "CD_ID": 8652
+                },
+                {
+                    "CD_NM": "임유 ",
+                    "CD_NM_EN": "Im You",
+                    "CD_ID": 9012
+                },
+                {
+                    "CD_NM": "정두화",
+                    "CD_NM_EN": "Jeong, Doo hwa",
+                    "CD_ID": 9654
+                },
+                {
+                    "CD_NM": "조경주",
+                    "CD_NM_EN": "Cho, Kyungjoo",
+                    "CD_ID": 9942
+                },
+                {
+                    "CD_NM": "조미희",
+                    "CD_NM_EN": "Cho Mihee",
+                    "CD_ID": 9979
+                }
+            ]
+        },
+        "SUBCATEGORY": {
+            "columns": {
+                "CD_ID": "string",
+                "CD_NM": "string",
+                "CD_NM_EN": "string"
+            },
+            "rows": [
+                {
+                    "CD_NM": "(국내)회화",
+                    "CD_NM_EN": "Contemporary Art - Painting (KR)",
+                    "CD_ID": "local_painting"
+                },
+                {
+                    "CD_NM": "(기타)기타",
+                    "CD_NM_EN": "Etc Art - etc",
+                    "CD_ID": "etc_etc"
+                }
+            ]
+        },
+        "LOT_HIGHLIGHT": {
+            "columns": {
+                "SALE_NO": "long",
+                "LOT_NO": "long",
+                "ARTIST_NAME_JSON": null,
+                "TITLE_JSON": null,
+                "EXPE_PRICE_FROM_JSON": null,
+                "EXPE_PRICE_TO_JSON": null,
+                "FILE_PATH": "string",
+                "FILE_NAME": "string"
+            },
+            "rows": []
+        },
+        "PADDLE_CHECK": {
+            "columns": {
+                "PADD_NO": "long"
+            },
+            "rows": []
+        }
+    }
+}

@@ -9,7 +9,7 @@ class Art(object):
         self.artist_name_eng:str = ''
         self.artist_comment:str = ''
         self.lot_no:int=0
-        self.make_year:int = 1900 
+        self.make_year:str = '' 
         self.title_kor:str=''
         self.title_eng:str=''
         self.currency:str = ''
