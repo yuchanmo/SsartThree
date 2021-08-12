@@ -40,7 +40,8 @@ def parseDataForInsert(f:str, data:dict):
             a.description = art['SIGN_INFO_JSON']
             a.estimate_high = art['EXPE_PRICE_TO_JSON'].get(a.currency,0.0)  if (art['EXPE_PRICE_TO_JSON']!=None and type(art['EXPE_PRICE_TO_JSON']) == dict) else 0.0
             a.estimate_low = art['EXPE_PRICE_FROM_JSON'].get(a.currency,0.0) if (art['EXPE_PRICE_FROM_JSON']!=None and type(art['EXPE_PRICE_FROM_JSON']) == dict) else 0.0
-            a.edition = art['EDITION']        
+            a.edition = art['EDITION'] 
+            a.image_name = art['LOT_IMG_NAME']       
             art_list.append(a.__dict__)
         except Exception as e:
             print(e)
@@ -64,7 +65,7 @@ for i,f in files:
 
 len(rows)
 
-
+df.head()
 
 
 df = pd.DataFrame(rows_list)

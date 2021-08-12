@@ -164,7 +164,7 @@ class SeoulAuctionRequester():
 
 #if __name__ =='__main__':
 #c= SeoulAuctionRequester()
-for i in range(386,653):
+for i in range(564,653):
     print(f'[seoul auction no {i}]')
     #rr = c.getAuctionResult(i)
     SeoulAuctionRequester.downloadArtImages(i)
