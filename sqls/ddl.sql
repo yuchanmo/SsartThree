@@ -19,7 +19,7 @@ create table auctions(
     site_id INT,
     auction_url_num int,
     auction_place nvarchar(500),
-    auction_date date not null,
+    auction_date date ,
     create_time DATETIME not null default CURRENT_TIMESTAMP ,
     foreign key(site_id)
     REFERENCES sites(site_id) on update CASCADE
@@ -32,12 +32,13 @@ create table arts(
     lot_no INT,
     make_year int,
     title_kor nvarchar(500),
+    title_eng nvarchar(500),
     currency nvarchar(30),
     money float,
     unit_cd nvarchar(30),
     size_length float,
     size_width float,
-    mix_cd float,
+    mix_cd nvarchar(50),
     mix_size float,
     canvas float,
     medium_eng nvarchar(50),
