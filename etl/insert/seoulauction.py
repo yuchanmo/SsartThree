@@ -53,7 +53,7 @@ def parseDataForInsert(f:str, data:dict):
 
 #if __name__ == '__main__':
 p = r'/mnt/auc/datas/que/seoul'
-files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,653)]
+files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,661)]
 rows_list=[]
 for i,f in files:
     try:
@@ -64,7 +64,7 @@ for i,f in files:
     except Exception as e:
         pass
 df = pd.DataFrame(rows_list)
-
+df.to_csv('seoul_827.csv',encoding='utf-8-sig')
 df.head()
 df.iloc[0]
 df['auction_url'] = 'https://www.seoulauction.com/'

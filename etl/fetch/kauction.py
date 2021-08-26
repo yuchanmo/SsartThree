@@ -29,9 +29,8 @@ curl 'https://www.k-auction.com/api/Auction/4/273' \
   --data-raw '{"price_from":"0","price_to":"6000000","page":"1","auc_kind":"4","auc_num":"273"}' \
   --compressed'''
 
-print(uncurl.parse(fetch_curl))
 
-fetch_kor_curl ='''
+weekly ='''
 curl 'https://www.k-auction.com/api/Auction/4/273' \
   -H 'authority: www.k-auction.com' \
   -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
@@ -50,10 +49,55 @@ curl 'https://www.k-auction.com/api/Auction/4/273' \
   --data-raw '{"price_from":"0","price_to":"6000000","page":"1","auc_kind":"4","auc_num":"273"}' \
   --compressed'''
 
-print(uncurl.parse(fetch_kor_curl))
 
-JSON_SAVE_PATH = '/mnt/auc/k'
-IMAGE_SAVE_PATH = '/mnt/auc/k/images'
+print(uncurl.parse(weekly))
+
+major ='''
+curl 'https://www.k-auction.com/api/Auction/1/140' \
+  -H 'authority: www.k-auction.com' \
+  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+  -H 'accept: */*' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://www.k-auction.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://www.k-auction.com/Auction/Major/140' \
+  -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR; _gid=GA1.2.807899113.1629995506; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:5:4.613849625:1629995506406; _TRK_SID=d62400ee6c33cfb8a34c00b75a307b20; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; .AspNetCore.Cookies=CfDJ8IbdZ8JAoitLr_VBu41ix5UlTqeEWLatBz_ksKXrsfLVSkUE7npAsXPH1txoKafPUmNrjemQYyoVbWy5sZvRZXqwWkRZO_GSsT58RN_08S9Q9OC-JFcdOhULqiyYmR9sh-eU6Ibdan4Ok5xkiCvNtdl695xXxaQpBpB8a5rNQOTXMpCmsR5fNBpdF2r3ON7AKpRHiMiBjIPoRIGZKjgE0OcObrObdbOD-6jSTCAG2W4TbDJA3qZGf8e4U8pJ3P345AYl6frk0F-UFXP8gtwv9gSby2Tw8VIt4ulYy1fYx72_OKeVL-X5LdWC5AzU33EzNp_U5iDuNOd3WmSgvKWG2X08fRQ5ftRIO7qKdH0bM5lW_-JS-g4UWl0SJpyQNB0p7Gw97eupPIAp6HLR06pn0YARAAzOXJkZzfeaREbuHCznkRdqEIkhof6nUVTOkYhtydjUpIy3v5ygUswRMYu27iO6bg_Rlm4pqjKZ8RXafChHZpdNUq8pdMrBZN6n3lX6N1y3lxFDNnt-MZYYYirXNoUtf4RUnAp9BUCIOuAsKEkpgFq78V_qmoR8JSQwK49gq1cTrEau6giIFGdWDsodAsemtO_cHpwQcmGArLOFJi-UUzpLELxQYU-Np244Rahtw__m90z2kQi8T7HHDZUIL8ciLbbRQuv8M2nunmJkbNVsv7tDJxLQNyj9ZX0NX9GFfKEVlynQ-A5OdRucDBBmrBifj54oC1duqNI4yBXrUX1-N4DIsV9VLlw7GdpuRL1u31VZnrHB-cVOp8ILRaqlur0aURST03lr5tnLjI51L-oJm3hYE00Ia6zUNwUf53b37z2BvQgMU-Drr5DkgmiygNEym1tRaJAORyvyKQTY0AatsANTuOwZvrno5h1lOz2M3JJloi5h0qWb5cVGjyCDS1AYE0qYMxKtTFncLy66xbCg; _gat_gtag_UA_90943423_1=1; _TRK_EX=4' \
+  --data-raw '{"price_from":0,"price_to":1000000000,"page":1,"auc_kind":"1","auc_num":"140"}' \
+  --compressed
+'''
+
+print(uncurl.parse(major))
+
+premium='''
+curl 'https://www.k-auction.com/api/Auction/2/128' \
+  -H 'authority: www.k-auction.com' \
+  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+  -H 'accept: */*' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://www.k-auction.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://www.k-auction.com/Auction/Premium/128' \
+  -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR; _gid=GA1.2.807899113.1629995506; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:5:4.613849625:1629995506406; _TRK_SID=d62400ee6c33cfb8a34c00b75a307b20; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; .AspNetCore.Cookies=CfDJ8IbdZ8JAoitLr_VBu41ix5UlTqeEWLatBz_ksKXrsfLVSkUE7npAsXPH1txoKafPUmNrjemQYyoVbWy5sZvRZXqwWkRZO_GSsT58RN_08S9Q9OC-JFcdOhULqiyYmR9sh-eU6Ibdan4Ok5xkiCvNtdl695xXxaQpBpB8a5rNQOTXMpCmsR5fNBpdF2r3ON7AKpRHiMiBjIPoRIGZKjgE0OcObrObdbOD-6jSTCAG2W4TbDJA3qZGf8e4U8pJ3P345AYl6frk0F-UFXP8gtwv9gSby2Tw8VIt4ulYy1fYx72_OKeVL-X5LdWC5AzU33EzNp_U5iDuNOd3WmSgvKWG2X08fRQ5ftRIO7qKdH0bM5lW_-JS-g4UWl0SJpyQNB0p7Gw97eupPIAp6HLR06pn0YARAAzOXJkZzfeaREbuHCznkRdqEIkhof6nUVTOkYhtydjUpIy3v5ygUswRMYu27iO6bg_Rlm4pqjKZ8RXafChHZpdNUq8pdMrBZN6n3lX6N1y3lxFDNnt-MZYYYirXNoUtf4RUnAp9BUCIOuAsKEkpgFq78V_qmoR8JSQwK49gq1cTrEau6giIFGdWDsodAsemtO_cHpwQcmGArLOFJi-UUzpLELxQYU-Np244Rahtw__m90z2kQi8T7HHDZUIL8ciLbbRQuv8M2nunmJkbNVsv7tDJxLQNyj9ZX0NX9GFfKEVlynQ-A5OdRucDBBmrBifj54oC1duqNI4yBXrUX1-N4DIsV9VLlw7GdpuRL1u31VZnrHB-cVOp8ILRaqlur0aURST03lr5tnLjI51L-oJm3hYE00Ia6zUNwUf53b37z2BvQgMU-Drr5DkgmiygNEym1tRaJAORyvyKQTY0AatsANTuOwZvrno5h1lOz2M3JJloi5h0qWb5cVGjyCDS1AYE0qYMxKtTFncLy66xbCg; _gat_gtag_UA_90943423_1=1; _TRK_EX=8' \
+  --data-raw '{"price_from":0,"price_to":52000000,"page":1,"auc_kind":"2","auc_num":"128"}' \
+  --compressed
+'''
+
+print(uncurl.parse(premium))
+
+JSON_SAVE_PATH = '/mnt/auc/datas/que/k'
+IMAGE_SAVE_PATH = '/mnt/auc/images/k'
 
 class KAuctionRequester():
     def __init__(self):
@@ -62,15 +106,36 @@ class KAuctionRequester():
     def __setSessionInfo(self):
         pass
 
-    def getAuctionResult(self,no,writeAsFile=True):
+    def getAuctionResult(self,no,auctiontype, writeAsFile=True):
         try:
+            data_params = {
+            'weekly':{
+                'param':{"price_from":0,"price_to":1000000000,"page":1,"auc_kind":"4","auc_num":str(no)},
+                'url':f"https://www.k-auction.com/api/Auction/4/{no}",
+                'referer':f"https://www.k-auction.com/Auction/Weekly/{no}"
+            },
+            'major':{            
+                'param':{"price_from":0,"price_to":1000000000,"page":1,"auc_kind":"1","auc_num":str(no)},
+                'url':f'https://www.k-auction.com/api/Auction/1/{no}',
+                'referer':f'https://www.k-auction.com/Auction/Major/{no}'
+            },
+            'premium':{            
+                'param':{"price_from":0,"price_to":1000000000,"page":1,"auc_kind":"2","auc_num":str(no)},
+                'url':f'https://www.k-auction.com/api/Auction/2/{no}',
+                'referer':f'https://www.k-auction.com/Auction/Premium/{no}'
+            },
+            }
             kor_data = []
             eng_data = []
             i = 1   
             flag = True    
             while flag:               
                 print(f'==============load page {i}==============')
-                data_param = {"price_from":0,"price_to":100000000,"page":i,"auc_kind":"4","auc_num":str(no)}
+                #data_param = {"price_from":0,"price_to":100000000,"page":1,"auc_kind":"4","auc_num":str(no)}
+                data_param = data_params[auctiontype]['param']
+                url = data_params[auctiontype]['url']
+                referer = data_params[auctiontype]['referer']
+                data_param['page']=i
                 data_param_str = json.dumps(data_param)
                 cultures= [
                     {"lang":"eng", "Culture":"c%3Den-US%7Cuic%3Den-US","TRK_EX":"14"}
@@ -78,7 +143,7 @@ class KAuctionRequester():
                     ]
                 for c in cultures:
                     lang,cul,trk = c['lang'],c['Culture'],c['TRK_EX']
-                    res = requests.post(f"https://www.k-auction.com/api/Auction/4/{no}",
+                    res = requests.post(url,
                                 data=data_param_str,
                                 headers={
                                     "Accept": "*/*",
@@ -86,7 +151,7 @@ class KAuctionRequester():
                                     "Connection": "keep-alive",
                                     "Content-Type": "application/json",
                                     "Origin": "https://www.k-auction.com",
-                                    "Referer": "https://www.k-auction.com/Auction/Weekly/272",
+                                    "Referer": referer,
                                     "Sec-Fetch-Dest": "empty",
                                     "Sec-Fetch-Mode": "cors",
                                     "Sec-Fetch-Site": "same-origin",
@@ -123,10 +188,11 @@ class KAuctionRequester():
                             else:
                                 kor_data.extend(auction_results)
                     time.sleep(0.2)
-                i+=1                            
+                i+=1     
+
             final_result = {'kor':kor_data,'eng':eng_data}
             if writeAsFile:
-                p = os.path.join(JSON_SAVE_PATH,f'{no}.json')                
+                p = os.path.join(JSON_SAVE_PATH,auctiontype,f'{no}.json')                
                 with open(p,'w') as j:
                     json.dump(final_result,j)
             return final_result
@@ -136,9 +202,9 @@ class KAuctionRequester():
 
     #https://images.k-auction.com/www/Konline/Work/0273/27300301001_L.jpg
     @staticmethod
-    def downloadArtImages(no):
+    def downloadArtImages(no,auctiontype):
         try:
-            data_path = f'{JSON_SAVE_PATH}/{no}.json'
+            data_path = f'{JSON_SAVE_PATH}/{auctiontype}/{no}.json'
             with open(data_path) as f:
                 data = json.load(f)
             samples = data['kor']
@@ -163,10 +229,14 @@ class KAuctionRequester():
             print(e)
             pass
 
+auctiontypes = ['weekly','major','premium']
+auctiontypes = ['major','premium']
 k = KAuctionRequester()
-for i in range(174,274):
-    print(f'[kauction no {i}]')
-    KAuctionRequester.downloadArtImages(i)
+for i in range(1,300):
+    for a in auctiontypes:
+        print(f' {a} [kauction no {i}]')
+        k.getAuctionResult(i,a)
+    #KAuctionRequester.downloadArtImages(i)
 
 # KAuctionRequester.downloadArtImages(273)
 

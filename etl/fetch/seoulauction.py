@@ -33,8 +33,8 @@ import uncurl
 print(uncurl.parse(seoul_acution_cur_ver))
 
 
-JSON_SAVE_PATH = '/mnt/auc/seoul'
-IMAGE_SAVE_PATH = '/mnt/auc/seoul/images'
+JSON_SAVE_PATH = '/mnt/auc/datas/que/seoul'
+IMAGE_SAVE_PATH = '/mnt/auc/images/seoul'
 
 class SeoulAuctionRequester():
     def __init__(self):
@@ -163,11 +163,11 @@ class SeoulAuctionRequester():
 
 
 #if __name__ =='__main__':
-#c= SeoulAuctionRequester()
-for i in range(629,653):
+c= SeoulAuctionRequester()
+for i in range(660,700):
     print(f'[seoul auction no {i}]')
-    #rr = c.getAuctionResult(i)
-    SeoulAuctionRequester.downloadArtImages(i)
+    rr = c.getAuctionResult(i)
+    #SeoulAuctionRequester.downloadArtImages(i)
     time.sleep(0.1)
 
 

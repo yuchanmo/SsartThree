@@ -52,20 +52,20 @@ def parseDataForInsert(f:str, data:list):
     return art_list
 
 
-if __name__ =='__main__':
+#if __name__ =='__main__':
 
-    p = r'/mnt/auc/k'
-    files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,274)]
-    rows_list=[]
-    for i,f in files:
-        try:
-            with open(f,'r') as jf:
-                data = json.load(jf)
-            pairs = [(k,e) for k,e in zip(data['kor'],data['eng'])]
-            rows = parseDataForInsert(f,pairs)        
-            rows_list.extend(rows)
-        except Exception as e:
-            pass
+p = r'/mnt/auc/datas/que/k'
+files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,278)]
+rows_list=[]
+for i,f in files:
+    try:
+        with open(f,'r') as jf:
+            data = json.load(jf)
+        pairs = [(k,e) for k,e in zip(data['kor'],data['eng'])]
+        rows = parseDataForInsert(f,pairs)        
+        rows_list.extend(rows)
+    except Exception as e:
+        pass
 
 
 
