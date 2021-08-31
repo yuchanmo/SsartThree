@@ -8,7 +8,7 @@ from pprint import pprint
 import re
 
 
-def parseDataForInsert(f:str, data:list):    
+def parseDataForInsert(f:str, data:list,cate:str):    
     art_list = []    
     for k,e in data:
         try:
@@ -43,8 +43,10 @@ def parseDataForInsert(f:str, data:list):
             a.estimate_high = k.get('price_estimated_high',0.0)
             a.estimate_low = k.get('price_estimated_low',0.0)
             a.edition = k.get('edition','')      
-            a.image_name = k.get('img_file_name','')            
-            art_list.append(a.__dict__)
+            a.image_name = k.get('img_file_name','') 
+            tmp = a.__dict__
+            tmp['cate'] = cate
+            art_list.append(tmp)
         except Exception as e:
             print(e)
             pass
@@ -53,21 +55,28 @@ def parseDataForInsert(f:str, data:list):
 
 
 #if __name__ =='__main__':
-
+from glob import glob
 p = r'/mnt/auc/datas/que/k'
-files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,278)]
+folders = [(c,os.path.join(p,c)) for c in os.listdir(p)]
+
+
 rows_list=[]
-for i,f in files:
-    try:
-        with open(f,'r') as jf:
-            data = json.load(jf)
-        pairs = [(k,e) for k,e in zip(data['kor'],data['eng'])]
-        rows = parseDataForInsert(f,pairs)        
-        rows_list.extend(rows)
-    except Exception as e:
-        pass
 
+for c,folder in folders:
+    tmp = folder +'/*'
+    files = glob(tmp)
+    for f in files:
+        try:
+            print(f)
+            with open(f,'r') as jf:
+                data = json.load(jf)
+            pairs = [(k,e) for k,e in zip(data['kor'],data['eng'])]
+            rows = parseDataForInsert(f,pairs,c)        
+            rows_list.extend(rows)
+        except Exception as e:
+            pass
 
+len(rows_list)
 
 df = pd.DataFrame(rows_list)
 df.to_csv('k_final.csv',encoding='utf-8-sig')
