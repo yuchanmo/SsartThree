@@ -10,103 +10,105 @@ import os
 import uncurl
 
 
-fetch_curl ='''
-curl 'https://www.k-auction.com/api/Auction/4/273' \
-  -H 'authority: www.k-auction.com' \
-  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
-  -H 'accept: */*' \
-  -H 'x-requested-with: XMLHttpRequest' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36' \
-  -H 'content-type: application/json' \
-  -H 'origin: https://www.k-auction.com' \
-  -H 'sec-fetch-site: same-origin' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'referer: https://www.k-auction.com/Auction/Weekly/273?price_from=0&price_to=6000000&page=1&auc_kind=4&auc_num=273' \
-  -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
-  -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; _gid=GA1.2.163908607.1628264643; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:2:1.51805234375:1628264642813; _TRK_SID=8294505574fb40983d414f707c7ec59c; .AspNetCore.Cookies=CfDJ8Go3F9LXhqNHnmEE9fnBWD5ZPHsScByGNSSUDCFufiELQjbofFDOvQGpf2lznKhnT1F3F-uSZnqULh23k5B-IOqwEEX0b_bhXgPEGUfFSJSeNqhI6_KjCbgbzEGSRHo2a-N0h51bIA1LHSN6I8LZM2coMiwAvV6Z67o4Au3lBtDRjlQZ4GeB47-iqQGulqpWIiDv4zXB9oozfz9Y8euI74V_7pYQTrJSgNGf0l-mzc3j5M6RLKsYIThuW9jF_LkN7Q1jc3BXEAlx4PyexXJnqsu6GSVmij11baQevZU-nJDdO3IMUUU5qPqTYAPEWoHa38V_ehO0Wk8pXDzpwF__p9i5lmjF3RTwWHb4a8oQaGXgZ8TLeGFOpbmYizjdNCP-v7k3QmjJ7z_G85G4aCjlgaf8mwOWr7v-zd323o3lCb0gT7fEXDwjGDc5Qfas-EG-eDMkMShjgLVFZ3F-SOw9lIOZjp7KFXmDrVEJzZiJsHfGe7ZMmXeGVPkT6EXoes8hdI_U8lRWhCM9VfyxwMtiDNAuG5xD9ZRLHtvq7piePQHY7W1E3lFaz5jxvA1pcPv95_BWBzUJXxPUD29g6Uzgs00DN9xvwAU35h_GI-qSLRtK2nRc78AZgFmctEHrM22TVufK8yZtiNs2nLDevMJaPpGaPWxAWeiPqt3UAb_COKkTv1vYM1Vrl9BB_jFXpfpllfmco4YvyskD7vdWUuJ-Km1fGYghYL1l5TkLbKJpUJtNVSr0tDAxdH9HWtGNkzxWdHoCTxDQXq57lZ4opobq8VNYyIMtbh9p4_EYYf2iRq1pptSu99aaBz2bj3nDjcYJu2A9S2hnhbD6BU6hjgsIucadhU5s-TuwcCkehIzWsUIQMi0Zs7LZcyhkfBBLVFreSr6o1fd6LHX63RfdgrmtNRm57RQwbwh2-TogsHQneM6L; .AspNetCore.Culture=c%3Den-US%7Cuic%3Den-US; _TRK_EX=14' \
-  --data-raw '{"price_from":"0","price_to":"6000000","page":"1","auc_kind":"4","auc_num":"273"}' \
-  --compressed'''
+# fetch_curl ='''
+# curl 'https://www.k-auction.com/api/Auction/4/273' \
+#   -H 'authority: www.k-auction.com' \
+#   -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+#   -H 'accept: */*' \
+#   -H 'x-requested-with: XMLHttpRequest' \
+#   -H 'sec-ch-ua-mobile: ?0' \
+#   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36' \
+#   -H 'content-type: application/json' \
+#   -H 'origin: https://www.k-auction.com' \
+#   -H 'sec-fetch-site: same-origin' \
+#   -H 'sec-fetch-mode: cors' \
+#   -H 'sec-fetch-dest: empty' \
+#   -H 'referer: https://www.k-auction.com/Auction/Weekly/273?price_from=0&price_to=6000000&page=1&auc_kind=4&auc_num=273' \
+#   -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+#   -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; _gid=GA1.2.163908607.1628264643; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:2:1.51805234375:1628264642813; _TRK_SID=8294505574fb40983d414f707c7ec59c; .AspNetCore.Cookies=CfDJ8Go3F9LXhqNHnmEE9fnBWD5ZPHsScByGNSSUDCFufiELQjbofFDOvQGpf2lznKhnT1F3F-uSZnqULh23k5B-IOqwEEX0b_bhXgPEGUfFSJSeNqhI6_KjCbgbzEGSRHo2a-N0h51bIA1LHSN6I8LZM2coMiwAvV6Z67o4Au3lBtDRjlQZ4GeB47-iqQGulqpWIiDv4zXB9oozfz9Y8euI74V_7pYQTrJSgNGf0l-mzc3j5M6RLKsYIThuW9jF_LkN7Q1jc3BXEAlx4PyexXJnqsu6GSVmij11baQevZU-nJDdO3IMUUU5qPqTYAPEWoHa38V_ehO0Wk8pXDzpwF__p9i5lmjF3RTwWHb4a8oQaGXgZ8TLeGFOpbmYizjdNCP-v7k3QmjJ7z_G85G4aCjlgaf8mwOWr7v-zd323o3lCb0gT7fEXDwjGDc5Qfas-EG-eDMkMShjgLVFZ3F-SOw9lIOZjp7KFXmDrVEJzZiJsHfGe7ZMmXeGVPkT6EXoes8hdI_U8lRWhCM9VfyxwMtiDNAuG5xD9ZRLHtvq7piePQHY7W1E3lFaz5jxvA1pcPv95_BWBzUJXxPUD29g6Uzgs00DN9xvwAU35h_GI-qSLRtK2nRc78AZgFmctEHrM22TVufK8yZtiNs2nLDevMJaPpGaPWxAWeiPqt3UAb_COKkTv1vYM1Vrl9BB_jFXpfpllfmco4YvyskD7vdWUuJ-Km1fGYghYL1l5TkLbKJpUJtNVSr0tDAxdH9HWtGNkzxWdHoCTxDQXq57lZ4opobq8VNYyIMtbh9p4_EYYf2iRq1pptSu99aaBz2bj3nDjcYJu2A9S2hnhbD6BU6hjgsIucadhU5s-TuwcCkehIzWsUIQMi0Zs7LZcyhkfBBLVFreSr6o1fd6LHX63RfdgrmtNRm57RQwbwh2-TogsHQneM6L; .AspNetCore.Culture=c%3Den-US%7Cuic%3Den-US; _TRK_EX=14' \
+#   --data-raw '{"price_from":"0","price_to":"6000000","page":"1","auc_kind":"4","auc_num":"273"}' \
+#   --compressed'''
 
 
-weekly ='''
-curl 'https://www.k-auction.com/api/Auction/4/273' \
-  -H 'authority: www.k-auction.com' \
-  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
-  -H 'accept: */*' \
-  -H 'x-requested-with: XMLHttpRequest' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36' \
-  -H 'content-type: application/json' \
-  -H 'origin: https://www.k-auction.com' \
-  -H 'sec-fetch-site: same-origin' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'referer: https://www.k-auction.com/Auction/Weekly/273?price_from=0&price_to=6000000&page=1&auc_kind=4&auc_num=273' \
-  -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
-  -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; _gid=GA1.2.163908607.1628264643; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:2:1.51805234375:1628264642813; _TRK_SID=8294505574fb40983d414f707c7ec59c; .AspNetCore.Cookies=CfDJ8Go3F9LXhqNHnmEE9fnBWD5ZPHsScByGNSSUDCFufiELQjbofFDOvQGpf2lznKhnT1F3F-uSZnqULh23k5B-IOqwEEX0b_bhXgPEGUfFSJSeNqhI6_KjCbgbzEGSRHo2a-N0h51bIA1LHSN6I8LZM2coMiwAvV6Z67o4Au3lBtDRjlQZ4GeB47-iqQGulqpWIiDv4zXB9oozfz9Y8euI74V_7pYQTrJSgNGf0l-mzc3j5M6RLKsYIThuW9jF_LkN7Q1jc3BXEAlx4PyexXJnqsu6GSVmij11baQevZU-nJDdO3IMUUU5qPqTYAPEWoHa38V_ehO0Wk8pXDzpwF__p9i5lmjF3RTwWHb4a8oQaGXgZ8TLeGFOpbmYizjdNCP-v7k3QmjJ7z_G85G4aCjlgaf8mwOWr7v-zd323o3lCb0gT7fEXDwjGDc5Qfas-EG-eDMkMShjgLVFZ3F-SOw9lIOZjp7KFXmDrVEJzZiJsHfGe7ZMmXeGVPkT6EXoes8hdI_U8lRWhCM9VfyxwMtiDNAuG5xD9ZRLHtvq7piePQHY7W1E3lFaz5jxvA1pcPv95_BWBzUJXxPUD29g6Uzgs00DN9xvwAU35h_GI-qSLRtK2nRc78AZgFmctEHrM22TVufK8yZtiNs2nLDevMJaPpGaPWxAWeiPqt3UAb_COKkTv1vYM1Vrl9BB_jFXpfpllfmco4YvyskD7vdWUuJ-Km1fGYghYL1l5TkLbKJpUJtNVSr0tDAxdH9HWtGNkzxWdHoCTxDQXq57lZ4opobq8VNYyIMtbh9p4_EYYf2iRq1pptSu99aaBz2bj3nDjcYJu2A9S2hnhbD6BU6hjgsIucadhU5s-TuwcCkehIzWsUIQMi0Zs7LZcyhkfBBLVFreSr6o1fd6LHX63RfdgrmtNRm57RQwbwh2-TogsHQneM6L; _TRK_EX=15; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR' \
-  --data-raw '{"price_from":"0","price_to":"6000000","page":"1","auc_kind":"4","auc_num":"273"}' \
-  --compressed'''
+# weekly ='''
+# curl 'https://www.k-auction.com/api/Auction/4/273' \
+#   -H 'authority: www.k-auction.com' \
+#   -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+#   -H 'accept: */*' \
+#   -H 'x-requested-with: XMLHttpRequest' \
+#   -H 'sec-ch-ua-mobile: ?0' \
+#   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36' \
+#   -H 'content-type: application/json' \
+#   -H 'origin: https://www.k-auction.com' \
+#   -H 'sec-fetch-site: same-origin' \
+#   -H 'sec-fetch-mode: cors' \
+#   -H 'sec-fetch-dest: empty' \
+#   -H 'referer: https://www.k-auction.com/Auction/Weekly/273?price_from=0&price_to=6000000&page=1&auc_kind=4&auc_num=273' \
+#   -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+#   -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; _gid=GA1.2.163908607.1628264643; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:2:1.51805234375:1628264642813; _TRK_SID=8294505574fb40983d414f707c7ec59c; .AspNetCore.Cookies=CfDJ8Go3F9LXhqNHnmEE9fnBWD5ZPHsScByGNSSUDCFufiELQjbofFDOvQGpf2lznKhnT1F3F-uSZnqULh23k5B-IOqwEEX0b_bhXgPEGUfFSJSeNqhI6_KjCbgbzEGSRHo2a-N0h51bIA1LHSN6I8LZM2coMiwAvV6Z67o4Au3lBtDRjlQZ4GeB47-iqQGulqpWIiDv4zXB9oozfz9Y8euI74V_7pYQTrJSgNGf0l-mzc3j5M6RLKsYIThuW9jF_LkN7Q1jc3BXEAlx4PyexXJnqsu6GSVmij11baQevZU-nJDdO3IMUUU5qPqTYAPEWoHa38V_ehO0Wk8pXDzpwF__p9i5lmjF3RTwWHb4a8oQaGXgZ8TLeGFOpbmYizjdNCP-v7k3QmjJ7z_G85G4aCjlgaf8mwOWr7v-zd323o3lCb0gT7fEXDwjGDc5Qfas-EG-eDMkMShjgLVFZ3F-SOw9lIOZjp7KFXmDrVEJzZiJsHfGe7ZMmXeGVPkT6EXoes8hdI_U8lRWhCM9VfyxwMtiDNAuG5xD9ZRLHtvq7piePQHY7W1E3lFaz5jxvA1pcPv95_BWBzUJXxPUD29g6Uzgs00DN9xvwAU35h_GI-qSLRtK2nRc78AZgFmctEHrM22TVufK8yZtiNs2nLDevMJaPpGaPWxAWeiPqt3UAb_COKkTv1vYM1Vrl9BB_jFXpfpllfmco4YvyskD7vdWUuJ-Km1fGYghYL1l5TkLbKJpUJtNVSr0tDAxdH9HWtGNkzxWdHoCTxDQXq57lZ4opobq8VNYyIMtbh9p4_EYYf2iRq1pptSu99aaBz2bj3nDjcYJu2A9S2hnhbD6BU6hjgsIucadhU5s-TuwcCkehIzWsUIQMi0Zs7LZcyhkfBBLVFreSr6o1fd6LHX63RfdgrmtNRm57RQwbwh2-TogsHQneM6L; _TRK_EX=15; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR' \
+#   --data-raw '{"price_from":"0","price_to":"6000000","page":"1","auc_kind":"4","auc_num":"273"}' \
+#   --compressed'''
 
 
-print(uncurl.parse(weekly))
+# print(uncurl.parse(weekly))
 
-major ='''
-curl 'https://www.k-auction.com/api/Auction/1/140' \
-  -H 'authority: www.k-auction.com' \
-  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
-  -H 'accept: */*' \
-  -H 'x-requested-with: XMLHttpRequest' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
-  -H 'content-type: application/json' \
-  -H 'origin: https://www.k-auction.com' \
-  -H 'sec-fetch-site: same-origin' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'referer: https://www.k-auction.com/Auction/Major/140' \
-  -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
-  -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR; _gid=GA1.2.807899113.1629995506; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:5:4.613849625:1629995506406; _TRK_SID=d62400ee6c33cfb8a34c00b75a307b20; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; .AspNetCore.Cookies=CfDJ8IbdZ8JAoitLr_VBu41ix5UlTqeEWLatBz_ksKXrsfLVSkUE7npAsXPH1txoKafPUmNrjemQYyoVbWy5sZvRZXqwWkRZO_GSsT58RN_08S9Q9OC-JFcdOhULqiyYmR9sh-eU6Ibdan4Ok5xkiCvNtdl695xXxaQpBpB8a5rNQOTXMpCmsR5fNBpdF2r3ON7AKpRHiMiBjIPoRIGZKjgE0OcObrObdbOD-6jSTCAG2W4TbDJA3qZGf8e4U8pJ3P345AYl6frk0F-UFXP8gtwv9gSby2Tw8VIt4ulYy1fYx72_OKeVL-X5LdWC5AzU33EzNp_U5iDuNOd3WmSgvKWG2X08fRQ5ftRIO7qKdH0bM5lW_-JS-g4UWl0SJpyQNB0p7Gw97eupPIAp6HLR06pn0YARAAzOXJkZzfeaREbuHCznkRdqEIkhof6nUVTOkYhtydjUpIy3v5ygUswRMYu27iO6bg_Rlm4pqjKZ8RXafChHZpdNUq8pdMrBZN6n3lX6N1y3lxFDNnt-MZYYYirXNoUtf4RUnAp9BUCIOuAsKEkpgFq78V_qmoR8JSQwK49gq1cTrEau6giIFGdWDsodAsemtO_cHpwQcmGArLOFJi-UUzpLELxQYU-Np244Rahtw__m90z2kQi8T7HHDZUIL8ciLbbRQuv8M2nunmJkbNVsv7tDJxLQNyj9ZX0NX9GFfKEVlynQ-A5OdRucDBBmrBifj54oC1duqNI4yBXrUX1-N4DIsV9VLlw7GdpuRL1u31VZnrHB-cVOp8ILRaqlur0aURST03lr5tnLjI51L-oJm3hYE00Ia6zUNwUf53b37z2BvQgMU-Drr5DkgmiygNEym1tRaJAORyvyKQTY0AatsANTuOwZvrno5h1lOz2M3JJloi5h0qWb5cVGjyCDS1AYE0qYMxKtTFncLy66xbCg; _gat_gtag_UA_90943423_1=1; _TRK_EX=4' \
-  --data-raw '{"price_from":0,"price_to":1000000000,"page":1,"auc_kind":"1","auc_num":"140"}' \
-  --compressed
-'''
+# major ='''
+# curl 'https://www.k-auction.com/api/Auction/1/140' \
+#   -H 'authority: www.k-auction.com' \
+#   -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+#   -H 'accept: */*' \
+#   -H 'x-requested-with: XMLHttpRequest' \
+#   -H 'sec-ch-ua-mobile: ?0' \
+#   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
+#   -H 'content-type: application/json' \
+#   -H 'origin: https://www.k-auction.com' \
+#   -H 'sec-fetch-site: same-origin' \
+#   -H 'sec-fetch-mode: cors' \
+#   -H 'sec-fetch-dest: empty' \
+#   -H 'referer: https://www.k-auction.com/Auction/Major/140' \
+#   -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+#   -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR; _gid=GA1.2.807899113.1629995506; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:5:4.613849625:1629995506406; _TRK_SID=d62400ee6c33cfb8a34c00b75a307b20; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; .AspNetCore.Cookies=CfDJ8IbdZ8JAoitLr_VBu41ix5UlTqeEWLatBz_ksKXrsfLVSkUE7npAsXPH1txoKafPUmNrjemQYyoVbWy5sZvRZXqwWkRZO_GSsT58RN_08S9Q9OC-JFcdOhULqiyYmR9sh-eU6Ibdan4Ok5xkiCvNtdl695xXxaQpBpB8a5rNQOTXMpCmsR5fNBpdF2r3ON7AKpRHiMiBjIPoRIGZKjgE0OcObrObdbOD-6jSTCAG2W4TbDJA3qZGf8e4U8pJ3P345AYl6frk0F-UFXP8gtwv9gSby2Tw8VIt4ulYy1fYx72_OKeVL-X5LdWC5AzU33EzNp_U5iDuNOd3WmSgvKWG2X08fRQ5ftRIO7qKdH0bM5lW_-JS-g4UWl0SJpyQNB0p7Gw97eupPIAp6HLR06pn0YARAAzOXJkZzfeaREbuHCznkRdqEIkhof6nUVTOkYhtydjUpIy3v5ygUswRMYu27iO6bg_Rlm4pqjKZ8RXafChHZpdNUq8pdMrBZN6n3lX6N1y3lxFDNnt-MZYYYirXNoUtf4RUnAp9BUCIOuAsKEkpgFq78V_qmoR8JSQwK49gq1cTrEau6giIFGdWDsodAsemtO_cHpwQcmGArLOFJi-UUzpLELxQYU-Np244Rahtw__m90z2kQi8T7HHDZUIL8ciLbbRQuv8M2nunmJkbNVsv7tDJxLQNyj9ZX0NX9GFfKEVlynQ-A5OdRucDBBmrBifj54oC1duqNI4yBXrUX1-N4DIsV9VLlw7GdpuRL1u31VZnrHB-cVOp8ILRaqlur0aURST03lr5tnLjI51L-oJm3hYE00Ia6zUNwUf53b37z2BvQgMU-Drr5DkgmiygNEym1tRaJAORyvyKQTY0AatsANTuOwZvrno5h1lOz2M3JJloi5h0qWb5cVGjyCDS1AYE0qYMxKtTFncLy66xbCg; _gat_gtag_UA_90943423_1=1; _TRK_EX=4' \
+#   --data-raw '{"price_from":0,"price_to":1000000000,"page":1,"auc_kind":"1","auc_num":"140"}' \
+#   --compressed
+# '''
 
-print(uncurl.parse(major))
+# print(uncurl.parse(major))
 
-premium='''
-curl 'https://www.k-auction.com/api/Auction/2/128' \
-  -H 'authority: www.k-auction.com' \
-  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
-  -H 'accept: */*' \
-  -H 'x-requested-with: XMLHttpRequest' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
-  -H 'content-type: application/json' \
-  -H 'origin: https://www.k-auction.com' \
-  -H 'sec-fetch-site: same-origin' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'referer: https://www.k-auction.com/Auction/Premium/128' \
-  -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
-  -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR; _gid=GA1.2.807899113.1629995506; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:5:4.613849625:1629995506406; _TRK_SID=d62400ee6c33cfb8a34c00b75a307b20; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; .AspNetCore.Cookies=CfDJ8IbdZ8JAoitLr_VBu41ix5UlTqeEWLatBz_ksKXrsfLVSkUE7npAsXPH1txoKafPUmNrjemQYyoVbWy5sZvRZXqwWkRZO_GSsT58RN_08S9Q9OC-JFcdOhULqiyYmR9sh-eU6Ibdan4Ok5xkiCvNtdl695xXxaQpBpB8a5rNQOTXMpCmsR5fNBpdF2r3ON7AKpRHiMiBjIPoRIGZKjgE0OcObrObdbOD-6jSTCAG2W4TbDJA3qZGf8e4U8pJ3P345AYl6frk0F-UFXP8gtwv9gSby2Tw8VIt4ulYy1fYx72_OKeVL-X5LdWC5AzU33EzNp_U5iDuNOd3WmSgvKWG2X08fRQ5ftRIO7qKdH0bM5lW_-JS-g4UWl0SJpyQNB0p7Gw97eupPIAp6HLR06pn0YARAAzOXJkZzfeaREbuHCznkRdqEIkhof6nUVTOkYhtydjUpIy3v5ygUswRMYu27iO6bg_Rlm4pqjKZ8RXafChHZpdNUq8pdMrBZN6n3lX6N1y3lxFDNnt-MZYYYirXNoUtf4RUnAp9BUCIOuAsKEkpgFq78V_qmoR8JSQwK49gq1cTrEau6giIFGdWDsodAsemtO_cHpwQcmGArLOFJi-UUzpLELxQYU-Np244Rahtw__m90z2kQi8T7HHDZUIL8ciLbbRQuv8M2nunmJkbNVsv7tDJxLQNyj9ZX0NX9GFfKEVlynQ-A5OdRucDBBmrBifj54oC1duqNI4yBXrUX1-N4DIsV9VLlw7GdpuRL1u31VZnrHB-cVOp8ILRaqlur0aURST03lr5tnLjI51L-oJm3hYE00Ia6zUNwUf53b37z2BvQgMU-Drr5DkgmiygNEym1tRaJAORyvyKQTY0AatsANTuOwZvrno5h1lOz2M3JJloi5h0qWb5cVGjyCDS1AYE0qYMxKtTFncLy66xbCg; _gat_gtag_UA_90943423_1=1; _TRK_EX=8' \
-  --data-raw '{"price_from":0,"price_to":52000000,"page":1,"auc_kind":"2","auc_num":"128"}' \
-  --compressed
-'''
+# premium='''
+# curl 'https://www.k-auction.com/api/Auction/2/128' \
+#   -H 'authority: www.k-auction.com' \
+#   -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+#   -H 'accept: */*' \
+#   -H 'x-requested-with: XMLHttpRequest' \
+#   -H 'sec-ch-ua-mobile: ?0' \
+#   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36' \
+#   -H 'content-type: application/json' \
+#   -H 'origin: https://www.k-auction.com' \
+#   -H 'sec-fetch-site: same-origin' \
+#   -H 'sec-fetch-mode: cors' \
+#   -H 'sec-fetch-dest: empty' \
+#   -H 'referer: https://www.k-auction.com/Auction/Premium/128' \
+#   -H 'accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+#   -H 'cookie: K-Auction.Token=1ec8523e3e974d6a9f5ece0c959200cf; _ga=GA1.2.2036382434.1628002323; _BS_GUUID=uxejjSc8YlP89qfJQxxbBJ9e3JPuIYqcvFwOxJWw; .AspNetCore.Culture=c%3Dko-KR%7Cuic%3Dko-KR; _gid=GA1.2.807899113.1629995506; _TRK_UID=a0b860d20f9b700c7c1aec08990c070f:5:4.613849625:1629995506406; _TRK_SID=d62400ee6c33cfb8a34c00b75a307b20; _TRK_CR=https%3A%2F%2Fwww.google.co.kr%2F; .AspNetCore.Cookies=CfDJ8IbdZ8JAoitLr_VBu41ix5UlTqeEWLatBz_ksKXrsfLVSkUE7npAsXPH1txoKafPUmNrjemQYyoVbWy5sZvRZXqwWkRZO_GSsT58RN_08S9Q9OC-JFcdOhULqiyYmR9sh-eU6Ibdan4Ok5xkiCvNtdl695xXxaQpBpB8a5rNQOTXMpCmsR5fNBpdF2r3ON7AKpRHiMiBjIPoRIGZKjgE0OcObrObdbOD-6jSTCAG2W4TbDJA3qZGf8e4U8pJ3P345AYl6frk0F-UFXP8gtwv9gSby2Tw8VIt4ulYy1fYx72_OKeVL-X5LdWC5AzU33EzNp_U5iDuNOd3WmSgvKWG2X08fRQ5ftRIO7qKdH0bM5lW_-JS-g4UWl0SJpyQNB0p7Gw97eupPIAp6HLR06pn0YARAAzOXJkZzfeaREbuHCznkRdqEIkhof6nUVTOkYhtydjUpIy3v5ygUswRMYu27iO6bg_Rlm4pqjKZ8RXafChHZpdNUq8pdMrBZN6n3lX6N1y3lxFDNnt-MZYYYirXNoUtf4RUnAp9BUCIOuAsKEkpgFq78V_qmoR8JSQwK49gq1cTrEau6giIFGdWDsodAsemtO_cHpwQcmGArLOFJi-UUzpLELxQYU-Np244Rahtw__m90z2kQi8T7HHDZUIL8ciLbbRQuv8M2nunmJkbNVsv7tDJxLQNyj9ZX0NX9GFfKEVlynQ-A5OdRucDBBmrBifj54oC1duqNI4yBXrUX1-N4DIsV9VLlw7GdpuRL1u31VZnrHB-cVOp8ILRaqlur0aURST03lr5tnLjI51L-oJm3hYE00Ia6zUNwUf53b37z2BvQgMU-Drr5DkgmiygNEym1tRaJAORyvyKQTY0AatsANTuOwZvrno5h1lOz2M3JJloi5h0qWb5cVGjyCDS1AYE0qYMxKtTFncLy66xbCg; _gat_gtag_UA_90943423_1=1; _TRK_EX=8' \
+#   --data-raw '{"price_from":0,"price_to":52000000,"page":1,"auc_kind":"2","auc_num":"128"}' \
+#   --compressed
+# '''
 
-print(uncurl.parse(premium))
+# print(uncurl.parse(premium))
 
 JSON_SAVE_PATH = '/mnt/auc/datas/que/k'
 IMAGE_SAVE_PATH = '/mnt/auc/images/k'
 
 class KAuctionRequester():
     def __init__(self):
+        global JSON_SAVE_PATH,IMAGE_SAVE_PATH
         self.session = requests.Session()
+       
 
     def __setSessionInfo(self):
         pass
 
-    def getAuctionResult(self,no,auctiontype, writeAsFile=True):
+    def getAuctionResult(self,no,json_base_path, auctiontype, writeAsFile=True):
         try:
             data_params = {
             'weekly':{
@@ -192,7 +194,7 @@ class KAuctionRequester():
 
             final_result = {'kor':kor_data,'eng':eng_data}
             if writeAsFile:
-                p = os.path.join(JSON_SAVE_PATH,auctiontype,f'{no}.json')                
+                p = os.path.join(json_base_path,auctiontype,f'{no}.json')                
                 with open(p,'w') as j:
                     json.dump(final_result,j)
             return final_result
@@ -202,9 +204,9 @@ class KAuctionRequester():
 
     #https://images.k-auction.com/www/Konline/Work/0273/27300301001_L.jpg
     @staticmethod
-    def downloadArtImages(no,auctiontype):
+    def downloadArtImages(no,json_base_path, image_base_path, auctiontype):
         try:
-            data_path = f'{JSON_SAVE_PATH}/{auctiontype}/{no}.json'
+            data_path = f'{json_base_path}/{auctiontype}/{no}.json'
             with open(data_path) as f:
                 data = json.load(f)
             samples = data['kor']
@@ -216,7 +218,7 @@ class KAuctionRequester():
                 response = requests.get(u,stream=True)
                 #print('success to access to image')
                 if response.status_code==200:
-                    dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
+                    dest_folder = f'{image_base_path}/{auctiontype}/{no}'
                     if not os.path.exists(dest_folder):
                         os.makedirs(dest_folder,exist_ok=True)
                     file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_path}')
@@ -229,18 +231,17 @@ class KAuctionRequester():
             print(e)
             pass
 
-auctiontypes = ['weekly','major','premium']
-auctiontypes = ['major','premium']
-k = KAuctionRequester()
-for i in range(1,300):
-    for a in auctiontypes:
-        print(f' {a} [kauction no {i}]')
-        k.getAuctionResult(i,a)
-    #KAuctionRequester.downloadArtImages(i)
 
-# KAuctionRequester.downloadArtImages(273)
 
-# no=273
-# dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
-# if not os.path.exists(dest_folder):
-#     os.makedirs(dest_folder,exist_ok=True)
+def fetchDatas(numlist:list,json_base_path,image_base_path):    
+    auctiontypes = ['weekly','major','premium']
+    auctiontypes = ['major','premium']
+    k = KAuctionRequester()
+    for i in numlist:
+        for a in auctiontypes:
+            try:
+                print(f' {a} [kauction no {i}]')
+                k.getAuctionResult(i,json_base_path,a)
+                KAuctionRequester.downloadArtImages(i,json_base_path,image_base_path,a)
+            except Exception as e:
+                raise e

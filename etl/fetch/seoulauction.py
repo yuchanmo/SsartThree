@@ -86,7 +86,7 @@ class SeoulAuctionRequester():
         except Exception as e:
             raise e
 
-    def getAuctionResult(self,no,writeAsFile=True):
+    def getAuctionResult(self,no,json_base_path,writeAsFile=True):
         try:       
             print(f'========load data for auction no {no}========')           
             row_cnt = 500
@@ -123,7 +123,7 @@ class SeoulAuctionRequester():
             )
             if res.status_code ==200:
                 if writeAsFile:
-                    p = os.path.join(JSON_SAVE_PATH,f'{no}.json')
+                    p = os.path.join(json_base_path,f'{no}.json')
                     with open(p,'w') as j:
                         json.dump(res.json(),j)
                 return res.json()
@@ -133,9 +133,9 @@ class SeoulAuctionRequester():
             print(e)
 
     @staticmethod
-    def downloadArtImages(no):
+    def downloadArtImages(no,json_base_path, image_base_path):
         try:
-            data_path = f'{JSON_SAVE_PATH}/{no}.json'
+            data_path = f'{json_base_path}/{no}.json'
             with open(data_path) as f:
                 data = json.load(f)
             samples = data['tables']['LOTS']['rows']
@@ -147,7 +147,7 @@ class SeoulAuctionRequester():
                     response = requests.get(u,stream=True)
                     #print('success to access to image')
                     if response.status_code==200:
-                        dest_folder = f'{IMAGE_SAVE_PATH}/{no}'
+                        dest_folder = f'{image_base_path}/{no}'
                         if not os.path.exists(dest_folder):
                             os.makedirs(dest_folder,exist_ok=True)
                         file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_name}')
@@ -161,14 +161,16 @@ class SeoulAuctionRequester():
             pass
         
 
-
-#if __name__ =='__main__':
-c= SeoulAuctionRequester()
-for i in range(660,700):
-    print(f'[seoul auction no {i}]')
-    rr = c.getAuctionResult(i)
-    #SeoulAuctionRequester.downloadArtImages(i)
-    time.sleep(0.1)
+def fetchDatas(numlist:list,json_base_path,image_base_path):
+    c= SeoulAuctionRequester()
+    for i in range(660,700):
+        try:
+            print(f'[seoul auction no {i}]')
+            c.getAuctionResult(i,json_base_path)
+            SeoulAuctionRequester.downloadArtImages(i,json_base_path,image_base_path)
+            time.sleep(0.1)
+        except Exception as e:
+            raise e
 
 
 
