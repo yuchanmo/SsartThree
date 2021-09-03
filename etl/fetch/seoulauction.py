@@ -7,30 +7,33 @@ import os
 from bs4 import BeautifulSoup
 import json
 import os
+import multiprocessing
+import parmap
+num_cores = multiprocessing.cpu_count() 
 
 # 0. curl 정보로 requests 포멧 확인
-seoul_acution_cur_ver ='''
-curl 'https://www.seoulauction.com/api/actionSet' \
-  -H 'Connection: keep-alive' \
-  -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
-  -H 'Accept: application/json, text/plain, */*' \
-  -H 'X-CSRF-TOKEN: 35a3c8c4-b38d-4e00-bf09-9237b5236ef3' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36' \
-  -H 'Content-Type: application/json; charset=UTF-8' \
-  -H 'Origin: https://www.seoulauction.com' \
-  -H 'Sec-Fetch-Site: same-origin' \
-  -H 'Sec-Fetch-Mode: cors' \
-  -H 'Sec-Fetch-Dest: empty' \
-  -H 'Referer: https://www.seoulauction.com/saleDetail?view_id=RESULT_AUCTION&sale_no=652' \
-  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
-  -H 'Cookie: notified-HTTPS_Notice=1; JSESSIONID=A1E47CE54CC9537EADDD04A358BEC520.was2; sale_no=652; curr_url=/WEB-INF/views/sale/lotList.jsp; prev_url=/WEB-INF/views/sale/lotList.jsp; wcs_bt=19656f7bcf4c5c:1627969637; reqRowCnt=20; sortBy=LOTAS' \
-  --data-raw '{"baseParms":{"sale_no":"652","expe_from_price":null,"expe_to_price":null,"cate_cds":null,"scate_cds":null,"mate_cds":null,"hashtag_list":null,"fav_cds_list":null},"actionList":[{"actionID":"sale_info","actionType":"select","tableName":"SALE"},{"actionID":"exch_rate_list","actionType":"select","tableName":"EXCH"},{"actionID":"lot_list_count","actionType":"select","tableName":"LOT_CNT","parmsList":[{"for_count":true}]},{"actionID":"lot_list_paging","actionType":"select","tableName":"LOTS","parmsList":[{"from":0,"rows":20,"sale_outside_yn":"N","sort_by":"LOTAS"}]},{"actionID":"get_customer_by_cust_no","actionType":"select","tableName":"CUST_INFO","parmsList":[]},{"actionID":"saleLot_category","actionType":"select","tableName":"CATEGORY"},{"actionID":"saleLot_subcategory","actionType":"select","tableName":"SUBCATEGORY"},{"actionID":"saleLot_material","actionType":"select","tableName":"MATERIAL"},{"actionID":"saleLot_artist","actionType":"select","tableName":"ARTIST"},{"actionID":"saleLot_hashtag","actionType":"select","tableName":"HASHTAG"},{"actionID":"saleHighlight_List","actionType":"select","tableName":"LOT_HIGHLIGHT"},{"actionID":"sale_cert_info","actionType":"select","tableName":"CERT"},{"actionID":"my_paddle_check","actionType":"select","tableName":"PADDLE_CHECK","parmsList":[{}]}]}' \
-  --compressed
-  '''
+# seoul_acution_cur_ver ='''
+# curl 'https://www.seoulauction.com/api/actionSet' \
+#   -H 'Connection: keep-alive' \
+#   -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' \
+#   -H 'Accept: application/json, text/plain, */*' \
+#   -H 'X-CSRF-TOKEN: 35a3c8c4-b38d-4e00-bf09-9237b5236ef3' \
+#   -H 'sec-ch-ua-mobile: ?0' \
+#   -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36' \
+#   -H 'Content-Type: application/json; charset=UTF-8' \
+#   -H 'Origin: https://www.seoulauction.com' \
+#   -H 'Sec-Fetch-Site: same-origin' \
+#   -H 'Sec-Fetch-Mode: cors' \
+#   -H 'Sec-Fetch-Dest: empty' \
+#   -H 'Referer: https://www.seoulauction.com/saleDetail?view_id=RESULT_AUCTION&sale_no=652' \
+#   -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+#   -H 'Cookie: notified-HTTPS_Notice=1; JSESSIONID=A1E47CE54CC9537EADDD04A358BEC520.was2; sale_no=652; curr_url=/WEB-INF/views/sale/lotList.jsp; prev_url=/WEB-INF/views/sale/lotList.jsp; wcs_bt=19656f7bcf4c5c:1627969637; reqRowCnt=20; sortBy=LOTAS' \
+#   --data-raw '{"baseParms":{"sale_no":"652","expe_from_price":null,"expe_to_price":null,"cate_cds":null,"scate_cds":null,"mate_cds":null,"hashtag_list":null,"fav_cds_list":null},"actionList":[{"actionID":"sale_info","actionType":"select","tableName":"SALE"},{"actionID":"exch_rate_list","actionType":"select","tableName":"EXCH"},{"actionID":"lot_list_count","actionType":"select","tableName":"LOT_CNT","parmsList":[{"for_count":true}]},{"actionID":"lot_list_paging","actionType":"select","tableName":"LOTS","parmsList":[{"from":0,"rows":20,"sale_outside_yn":"N","sort_by":"LOTAS"}]},{"actionID":"get_customer_by_cust_no","actionType":"select","tableName":"CUST_INFO","parmsList":[]},{"actionID":"saleLot_category","actionType":"select","tableName":"CATEGORY"},{"actionID":"saleLot_subcategory","actionType":"select","tableName":"SUBCATEGORY"},{"actionID":"saleLot_material","actionType":"select","tableName":"MATERIAL"},{"actionID":"saleLot_artist","actionType":"select","tableName":"ARTIST"},{"actionID":"saleLot_hashtag","actionType":"select","tableName":"HASHTAG"},{"actionID":"saleHighlight_List","actionType":"select","tableName":"LOT_HIGHLIGHT"},{"actionID":"sale_cert_info","actionType":"select","tableName":"CERT"},{"actionID":"my_paddle_check","actionType":"select","tableName":"PADDLE_CHECK","parmsList":[{}]}]}' \
+#   --compressed
+#   '''
 
-import uncurl
-print(uncurl.parse(seoul_acution_cur_ver))
+# import uncurl
+# print(uncurl.parse(seoul_acution_cur_ver))
 
 
 JSON_SAVE_PATH = '/mnt/auc/datas/que/seoul'
@@ -126,6 +129,7 @@ class SeoulAuctionRequester():
                     p = os.path.join(json_base_path,f'{no}.json')
                     with open(p,'w') as j:
                         json.dump(res.json(),j)
+                    time.sleep(0.1)
                 return res.json()
             else:
                 return None
@@ -134,6 +138,7 @@ class SeoulAuctionRequester():
 
     @staticmethod
     def downloadArtImages(no,json_base_path, image_base_path):
+        print(f'========download image for seoul auction no {no}========') 
         try:
             data_path = f'{json_base_path}/{no}.json'
             with open(data_path) as f:
@@ -151,26 +156,43 @@ class SeoulAuctionRequester():
                         if not os.path.exists(dest_folder):
                             os.makedirs(dest_folder,exist_ok=True)
                         file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_name}')
+                        print(file_path)
                         with open(file_path,'wb') as f:
                             for chunk in response:
                                 f.write(chunk)
                     else:
                         pass
+                    time.sleep(0.1)
         except Exception as e:
             print(e)
             pass
         
 
-def fetchDatas(numlist:list,json_base_path,image_base_path):
+def fetchDatas(numlist:list,json_base_path='/mnt/auc/datas/que/seoul',image_base_path='/mnt/auc/images/seoul',useMultiProcessing:bool=False):    
     c= SeoulAuctionRequester()
-    for i in range(660,700):
-        try:
-            print(f'[seoul auction no {i}]')
-            c.getAuctionResult(i,json_base_path)
-            SeoulAuctionRequester.downloadArtImages(i,json_base_path,image_base_path)
-            time.sleep(0.1)
-        except Exception as e:
-            raise e
+    if useMultiProcessing:
+        parmap.map(c.getAuctionResult,numlist,json_base_path,pm_pbar=True,pm_processes=int(num_cores/2))
+    else: 
+        for i in numlist:
+            try:
+                print(f'[seoul auction no {i}]')
+                c.getAuctionResult(i,json_base_path)
+                #SeoulAuctionRequester.downloadArtImages(i,json_base_path,image_base_path)
+                #time.sleep(0.1)
+            except Exception as e:
+                raise e
+
+def downloadImages(numlist:list,json_base_path='/mnt/auc/datas/que/seoul',image_base_path='/mnt/auc/images/seoul',useMultiProcessing:bool=False):
+    if useMultiProcessing:
+        parmap.map(SeoulAuctionRequester.downloadArtImages,numlist,json_base_path,image_base_path,pm_pbar=True,pm_processes=int(num_cores/2))
+    else:
+        for i in numlist:
+            try:
+                print(f'[seoul auction no {i}]')            
+                SeoulAuctionRequester.downloadArtImages(i,json_base_path,image_base_path)            
+            except Exception as e:
+                raise e
+
 
 
 

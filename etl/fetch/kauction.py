@@ -8,6 +8,10 @@ from bs4 import BeautifulSoup
 import json
 import os
 import uncurl
+import multiprocessing
+import parmap
+num_cores = multiprocessing.cpu_count() 
+
 
 
 # fetch_curl ='''
@@ -96,8 +100,7 @@ import uncurl
 
 # print(uncurl.parse(premium))
 
-JSON_SAVE_PATH = '/mnt/auc/datas/que/k'
-IMAGE_SAVE_PATH = '/mnt/auc/images/k'
+
 
 class KAuctionRequester():
     def __init__(self):
@@ -197,6 +200,7 @@ class KAuctionRequester():
                 p = os.path.join(json_base_path,auctiontype,f'{no}.json')                
                 with open(p,'w') as j:
                     json.dump(final_result,j)
+                time.sleep(0.1)
             return final_result
         except Exception as e:
             print(e)
@@ -205,6 +209,7 @@ class KAuctionRequester():
     #https://images.k-auction.com/www/Konline/Work/0273/27300301001_L.jpg
     @staticmethod
     def downloadArtImages(no,json_base_path, image_base_path, auctiontype):
+        print(f'========download image for k {auctiontype} auction no {no}========') 
         try:
             data_path = f'{json_base_path}/{auctiontype}/{no}.json'
             with open(data_path) as f:
@@ -222,26 +227,44 @@ class KAuctionRequester():
                     if not os.path.exists(dest_folder):
                         os.makedirs(dest_folder,exist_ok=True)
                     file_path = os.path.join(dest_folder,f'LOT{lot_no}_{image_path}')
+                    print(file_path)
                     with open(file_path,'wb') as f:
                         for chunk in response:
                             f.write(chunk)
                 else:
                     pass
+                time.sleep(0.1)
         except Exception as e:
             print(e)
             pass
 
+JSON_SAVE_PATH = '/mnt/auc/datas/que/k'
+IMAGE_SAVE_PATH = '/mnt/auc/images/k'
 
-
-def fetchDatas(numlist:list,json_base_path,image_base_path):    
+def fetchDatas(auctiontype,numlist:list,json_base_path='/mnt/auc/datas/que/k',useMultiProcessing:bool=False):     
     auctiontypes = ['weekly','major','premium']
-    auctiontypes = ['major','premium']
+    auctiontypes = ['major','premium']    
     k = KAuctionRequester()
-    for i in numlist:
-        for a in auctiontypes:
+    if useMultiProcessing:
+        parmap.map(k.getAuctionResult, numlist,json_base_path,auctiontype,pm_pbar=True,pm_processes=int(num_cores/2))
+    else:
+        for i in numlist:
+            # for a in auctiontypes:
             try:
-                print(f' {a} [kauction no {i}]')
-                k.getAuctionResult(i,json_base_path,a)
-                KAuctionRequester.downloadArtImages(i,json_base_path,image_base_path,a)
+                print(f' {auctiontype} [kauction no {i}]')
+                k.getAuctionResult(i,json_base_path,auctiontype)                
+            except Exception as e:
+                raise e
+
+def downloadImages(auctiontype,numlist:list,json_base_path='/mnt/auc/datas/que/k',image_base_path='/mnt/auc/images/k',useMultiProcessing:bool=False):     
+    # auctiontypes = ['weekly','major','premium']
+    # auctiontypes = ['major','premium']    
+    if useMultiProcessing:
+        parmap.map(KAuctionRequester.downloadArtImages,numlist,json_base_path,image_base_path,auctiontype,pm_pbar=True,pm_processes=int(num_cores/2))
+    else:
+        for i in numlist:            
+            try:
+                print(f' {auctiontype} [kauction no {i}]')                
+                KAuctionRequester.downloadArtImages(i,json_base_path,image_base_path,auctiontype)
             except Exception as e:
                 raise e

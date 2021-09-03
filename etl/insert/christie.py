@@ -11,6 +11,7 @@ class Art(object):
         self.estimate_low:float = '' 
         self.image_name:str = '' 
         self.description_txt:str = ''    
+        self.file:str =''
 
 import os
 import json
@@ -50,20 +51,44 @@ def parseDataForInsert(f:str, data:dict):
         images = art['image']
         a.image_name = images.get('image_mobile_src','')        
         a.description_txt = art['description_txt']        
+        a.file = f
         art_list.append(a.__dict__)
 
     print(len(art_list))
 
     return art_list
 
-p = './christies/'
+p = '/mnt/auc/datas/que/christies'
 rows_list=[]
 
 
 for f in os.listdir(p):
-    with open(p+f,'rt', encoding='UTF8') as jf:
-        data = json.load(jf)
-    rows = parseDataForInsert(f,data)
-    rows_list.extend(rows)    
+    try:
+        path = p+'/'+f
+        print(path)
+        with open(path,'rt', encoding='UTF8') as jf:
+            data = json.load(jf)
+        rows = parseDataForInsert(f,data)
+        rows_list.extend(rows)    
+    except Exception as e:
+        pass
+
+import matplotlib.pyplot as plt
 
 df = pd.DataFrame(rows_list)
+
+from bs4 import BeautifulSoup
+df['desc'] = df['description_txt'].apply(lambda c :' '.join(BeautifulSoup(c, "html.parser").findAll(text=True)).split('\n'))
+df['desc_len'] = df['desc'].apply(lambda x : len(x))
+print(df[df['desc_len']==166].iloc[0]['description_txt'])
+df['desc_len'].min()
+df['desc'].dtype
+print()
+from collections import Counter
+
+Counter(df['desc_len'].tolist()
+
+for i in df.iloc[69548]['desc']:
+    print(i)
+
+df.iloc[69548]['description_txt']
