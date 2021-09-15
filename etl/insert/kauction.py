@@ -14,7 +14,7 @@ def parseDataForInsert(f:str, data:list,cate:str):
         try:
             a = Art()
             a.auction_site = 'k'
-            a.auction_url_num = int(f.split('/')[-1].split('.')[0])
+            a.auction_url_num = int(f.split('\\')[-1].split('.')[0])
             a.auction_place = ''
             a.auction_date = k.get('auc_end_date','') 
             a.artist_name_kor = k.get('artist_name','') 
@@ -44,8 +44,8 @@ def parseDataForInsert(f:str, data:list,cate:str):
             a.estimate_low = k.get('price_estimated_low',0.0)
             a.edition = k.get('edition','')      
             a.image_name = k.get('img_file_name','') 
-            tmp = a.__dict__
-            tmp['cate'] = cate
+            a.auction_cate = cate
+            tmp = a.__dict__            
             art_list.append(tmp)
         except Exception as e:
             print(e)
@@ -56,7 +56,7 @@ def parseDataForInsert(f:str, data:list,cate:str):
 
 #if __name__ =='__main__':
 from glob import glob
-p = r'/mnt/auc/datas/que/k'
+p = r'F:\art\auc\datas\que\k'
 folders = [(c,os.path.join(p,c)) for c in os.listdir(p)]
 
 

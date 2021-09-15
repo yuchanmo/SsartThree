@@ -27,7 +27,8 @@ class Art(object):
         self.estimate_low:float = 0.0
         self.edition:str = ''
         self.image_name:str = ''    
-
+        self.art_info_source_id = 1
+        self.auction_cate = ''
 
 
 art ={

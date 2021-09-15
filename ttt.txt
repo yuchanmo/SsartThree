@@ -1,0 +1,7 @@
+'auction_id'
+,'art_info_id'
+,'lot_no'
+,'currency'
+,'price'
+,'estimate_high'
+,'estimate_low'
