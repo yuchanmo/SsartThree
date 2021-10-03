@@ -45,6 +45,12 @@ def parseDataForInsert(f:str, data:list,cate:str):
             a.edition = k.get('edition','')      
             a.image_name = k.get('img_file_name','') 
             a.auction_cate = cate
+            direct_date = k.get('direct_date','')
+            direct_date = direct_date.replace('b.','').replace('/',',').replace('·',',').replace('&',',') if type(direct_date) == str else ' '
+            direct_date = direct_date.split(',')[0] if ',' in direct_date else direct_date
+            birth,death = direct_date.split('-') if '-' in direct_date else [direct_date,' ']
+            a.birth = birth
+            a.death = death
             tmp = a.__dict__            
             art_list.append(tmp)
         except Exception as e:
@@ -65,7 +71,7 @@ rows_list=[]
 for c,folder in folders:
     tmp = folder +'/*'
     files = glob(tmp)
-    for f in files:
+    for f in  files:
         try:
             print(f)
             with open(f,'r') as jf:
@@ -79,5 +85,5 @@ for c,folder in folders:
 len(rows_list)
 
 df = pd.DataFrame(rows_list)
-df.to_csv('k_final.csv',encoding='utf-8-sig')
+df.to_csv('k_20211003.csv',encoding='utf-8-sig')
 

@@ -18,7 +18,7 @@ def parseDataForInsert(f:str, data:dict):
         try:
             a = Art()
             a.auction_site = 'seoul'
-            a.auction_url_num = int(f.split('/')[-1].split('.')[0])
+            a.auction_url_num = int(f.split('\\')[-1].split('.')[0])
             a.auction_place = sale['PLACE_JSON']['en'] if 'en' in sale['PLACE_JSON'].keys() else ''
             a.auction_date = sale['PREVIEW_JSON'][0].get('TO_DT',"") if (sale['PREVIEW_JSON']!=None and type(sale['PREVIEW_JSON']) == list) else ''
             a.artist_name_kor = art['ARTIST_NAME_JSON'].get('ko','') if (art['ARTIST_NAME_JSON']!=None and type(art['ARTIST_NAME_JSON']) == dict) else ''
@@ -44,6 +44,8 @@ def parseDataForInsert(f:str, data:dict):
             a.estimate_low = art['EXPE_PRICE_FROM_JSON'].get(a.currency,0.0) if (art['EXPE_PRICE_FROM_JSON']!=None and type(art['EXPE_PRICE_FROM_JSON']) == dict) else 0.0
             a.edition = art['EDITION']
             a.image_name = art['LOT_IMG_NAME']
+            a.birth = art['BORN_YEAR'].replace('-','') if type(art['BORN_YEAR']) == str else art['BORN_YEAR']
+            a.death = art['DIE_YEAR']
             a.auction_cate = 'online'
             art_list.append(a.__dict__)
         except Exception as e:
@@ -54,18 +56,20 @@ def parseDataForInsert(f:str, data:dict):
 
 
 #if __name__ == '__main__':
-p = r'G:\art\auc\datas\que\seoul'
-files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,661)]
+p = r'F:\art\auc\datas\que\seoul'
+files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,670)]
 rows_list=[]
 for i,f in files:
     try:
-        with open(f,'r') as jf:
+        with open(f,'r',encoding='utf-8') as jf:
             data = json.load(jf)
         rows = parseDataForInsert(f,data)
         rows_list.extend(rows)
     except Exception as e:
         pass
 df = pd.DataFrame(rows_list)
+df.to_csv('seoul_1003.csv',encoding='utf-8-sig')
+
 # df.to_csv('seoul_827.csv',encoding='utf-8-sig')
 # df.head()
 # df.iloc[0]

@@ -1,5 +1,6 @@
 import pandas as pd
 from utils.dbcon import sqlserver
+from preprocessing import makeFeature
 import json
 
 
@@ -117,7 +118,8 @@ def insertNewRows(original_df,table_key,val):
 #def loadData(path:str):
 path = r'seoul_913.csv'
 df = pd.read_csv(path,encoding='utf-8-sig')
-
+df = makeFeature(df)
+df.iloc[0]
 df['art_info_source_id'] = 1
 df['auction_cate'] = 'online'
 

@@ -29,6 +29,8 @@ class Art(object):
         self.image_name:str = ''    
         self.art_info_source_id = 1
         self.auction_cate = ''
+        self.birth = ''
+        self.death = ''
 
 
 art ={
