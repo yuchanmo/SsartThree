@@ -241,7 +241,7 @@ class KAuctionRequester():
 JSON_SAVE_PATH = '/mnt/auc/datas/que/k'
 IMAGE_SAVE_PATH = '/mnt/auc/images/k'
 
-def fetchDatas(auctiontype,numlist:list,json_base_path='/mnt/auc/datas/que/k',useMultiProcessing:bool=False):     
+def fetchDatas(auctiontype,numlist:list,json_base_path,useMultiProcessing:bool=False):     
     auctiontypes = ['weekly','major','premium']
     auctiontypes = ['major','premium']    
     k = KAuctionRequester()
@@ -256,7 +256,7 @@ def fetchDatas(auctiontype,numlist:list,json_base_path='/mnt/auc/datas/que/k',us
             except Exception as e:
                 raise e
 
-def downloadImages(auctiontype,numlist:list,json_base_path='/mnt/auc/datas/que/k',image_base_path='/mnt/auc/images/k',useMultiProcessing:bool=False):     
+def downloadImages(auctiontype,numlist:list,json_base_path,image_base_path,useMultiProcessing:bool=False):     
     # auctiontypes = ['weekly','major','premium']
     # auctiontypes = ['major','premium']    
     if useMultiProcessing:

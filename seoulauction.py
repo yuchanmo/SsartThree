@@ -1,4 +1,9 @@
 from etl.fetch.seoulauction import downloadImages,fetchDatas
 
 if __name__=='__main__':
-    downloadImages(list(range(654,661)),json_base_path='/mnt/auc/datas/que/seoul',image_base_path='/mnt/auc/images/seoul',useMultiProcessing=True)
+    JSON_BASE_PATH = r'F:\art\auc\datas\que\seoul'
+    IMAGE_BASE_PATH = r'F:\art\auc\images\seoul\online'
+    CHROME_DRIVER_PATH = r'D:\Programming\artpassion\aucetl\chromedriver.exe'
+    data = list(range(661,670))
+    fetchDatas(data,JSON_BASE_PATH,CHROME_DRIVER_PATH,useMultiProcessing=True)
+    downloadImages(data,json_base_path=JSON_BASE_PATH,image_base_path=IMAGE_BASE_PATH,useMultiProcessing=True)

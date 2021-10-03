@@ -40,9 +40,11 @@ JSON_SAVE_PATH = '/mnt/auc/datas/que/seoul'
 IMAGE_SAVE_PATH = '/mnt/auc/images/seoul'
 
 class SeoulAuctionRequester():
-    def __init__(self):
+    def __init__(self,chrome_path):
+        self.chrome_driver_path = chrome_path
         self.session = requests.Session()
         self.__setSessionInfo()
+        
 
     def __setSessionInfo(self):
         try:
@@ -57,10 +59,10 @@ class SeoulAuctionRequester():
             id = login_info['id']
             pwd = login_info['pwd']
 
-            CHROMEDRIVER_PATH = r'/home/fakeblocker/code/python/Auc/chromedriver'
+            #CHROMEDRIVER_PATH = r'/home/fakeblocker/code/python/Auc/chromedriver'
             options = Options()
             options.add_argument('headless')
-            options.headless = driver = webdriver.Chrome(CHROMEDRIVER_PATH, chrome_options=options)
+            options.headless = driver = webdriver.Chrome(self.chrome_driver_path, chrome_options=options)
             driver.get('https://www.seoulauction.com/login')
             driver.find_element_by_id('loginId').send_keys(id)
             driver.find_element_by_id('password').send_keys(pwd)
@@ -168,8 +170,8 @@ class SeoulAuctionRequester():
             pass
         
 
-def fetchDatas(numlist:list,json_base_path='/mnt/auc/datas/que/seoul',image_base_path='/mnt/auc/images/seoul',useMultiProcessing:bool=False):    
-    c= SeoulAuctionRequester()
+def fetchDatas(numlist:list,json_base_path,chrome_driver_path, useMultiProcessing:bool=False):    
+    c= SeoulAuctionRequester(chrome_driver_path)
     if useMultiProcessing:
         parmap.map(c.getAuctionResult,numlist,json_base_path,pm_pbar=True,pm_processes=int(num_cores/2))
     else: 
@@ -182,7 +184,7 @@ def fetchDatas(numlist:list,json_base_path='/mnt/auc/datas/que/seoul',image_base
             except Exception as e:
                 raise e
 
-def downloadImages(numlist:list,json_base_path='/mnt/auc/datas/que/seoul',image_base_path='/mnt/auc/images/seoul',useMultiProcessing:bool=False):
+def downloadImages(numlist:list,json_base_path,image_base_path,useMultiProcessing:bool=False):
     if useMultiProcessing:
         parmap.map(SeoulAuctionRequester.downloadArtImages,numlist,json_base_path,image_base_path,pm_pbar=True,pm_processes=int(num_cores/2))
     else:
