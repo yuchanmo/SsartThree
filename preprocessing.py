@@ -11,14 +11,17 @@ import math
 # df = df.drop('Unnamed: 0', 1)
 def makeFeature(df:pd.DataFrame):
     df['auction_date'] = pd.to_datetime(df['auction_date'])   
+    #df['size_length'] = pd.to_numeric(df['size_length'].apply(lambda x : x[1:] if x[0] == '.' else x)) if df['size_length'].dtype==str else df['size_length']
+    #df['size_length'] = pd.to_numeric()
+    df['size_width'] = pd.to_numeric(df['size_width']) #.apply(lambda x : x[1:] if x[0] == '.' else x))
     conditions = [
     (df['size_length'] > df['size_width']),
     (df['size_length'] < df['size_width']),
     (df['size_length'] == df['size_width']),
     ]
     choices = [df['size_length'], df['size_width'], df['size_width']]
-    df['max_size'] = np.select(conditions, choices, default='black')
-    df['max_size'] = df['max_size'].astype(float)    
+    df['max_size'] = np.select(conditions, choices, default='0')
+    df['max_size'] = pd.to_numeric(df['max_size'])
 
 
     #canvas_size
@@ -34,7 +37,7 @@ def makeFeature(df:pd.DataFrame):
         (df['max_size']>300)
         ]
     choices = [1,2,3,4,5,6,8,10,12,15,20,25,30,40,50,60,80,100,120,150,200,300,500]
-    df['canvas_size'] = np.select(conditions, choices, default='black').astype(float)
+    df['canvas_size'] = np.select(conditions, choices, default='0').astype(float)
 
 
     #artwork_type
@@ -71,4 +74,6 @@ def makeFeature(df:pd.DataFrame):
     return df
     #name+born
     #df['artist_name_kor_born'] = df['artist_name_kor'].astype(str) + ' (' + df['BORN_YEAR'].astype(str) +')'
+
+
 

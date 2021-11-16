@@ -33,10 +33,10 @@ def parseDataForInsert(f:str, data:list,cate:str):
             width = nums[1] if len(nums)>=2 else 0.0
             a.unit_cd = 'cm' if 'cm' in size else ''
             a.size_length =length
-            a.size_width =width
-            a.mix_cd = 0.0
-            a.mix_size =0.0
+            a.size_width =width           
             a.canvas = k.get('size','')
+            a.mix_cd = 'height' if '(h)' in a.canvas else 'depth'
+            a.mix_size = 1 if '(h)' in a.canvas else 0
             a.medium_eng = e.get('material','')
             a.medium_kor = k.get('material','')
             a.description = ''# k.get('desc','')
@@ -51,6 +51,7 @@ def parseDataForInsert(f:str, data:list,cate:str):
             birth,death = direct_date.split('-') if '-' in direct_date else [direct_date,' ']
             a.birth = birth
             a.death = death
+            a.sale_title = cate
             tmp = a.__dict__            
             art_list.append(tmp)
         except Exception as e:
@@ -85,5 +86,5 @@ for c,folder in folders:
 len(rows_list)
 
 df = pd.DataFrame(rows_list)
-df.to_csv('k_20211003.csv',encoding='utf-8-sig')
+df.to_csv('k_1029.csv',encoding='utf-8-sig')
 

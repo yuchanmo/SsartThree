@@ -31,6 +31,7 @@ class Art(object):
         self.auction_cate = ''
         self.birth = ''
         self.death = ''
+        self.sale_title =''
 
 
 art ={

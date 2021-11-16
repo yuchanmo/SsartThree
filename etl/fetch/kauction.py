@@ -10,6 +10,8 @@ import os
 import uncurl
 import multiprocessing
 import parmap
+
+#from kauction import JSON_BASE_PATH
 num_cores = multiprocessing.cpu_count() 
 
 
@@ -105,8 +107,7 @@ num_cores = multiprocessing.cpu_count()
 class KAuctionRequester():
     def __init__(self):
         global JSON_SAVE_PATH,IMAGE_SAVE_PATH
-        self.session = requests.Session()
-       
+        self.session = requests.Session()       
 
     def __setSessionInfo(self):
         pass
@@ -135,7 +136,7 @@ class KAuctionRequester():
             i = 1   
             flag = True    
             while flag:               
-                print(f'==============load page {i}==============')
+                print(f'==============load page {i} of {no}==============')
                 #data_param = {"price_from":0,"price_to":100000000,"page":1,"auc_kind":"4","auc_num":str(no)}
                 data_param = data_params[auctiontype]['param']
                 url = data_params[auctiontype]['url']
@@ -240,6 +241,7 @@ class KAuctionRequester():
 
 JSON_SAVE_PATH = '/mnt/auc/datas/que/k'
 IMAGE_SAVE_PATH = '/mnt/auc/images/k'
+
 
 def fetchDatas(auctiontype,numlist:list,json_base_path,useMultiProcessing:bool=False):     
     auctiontypes = ['weekly','major','premium']

@@ -1,0 +1,1055 @@
+{
+    "data": {
+        "auction": {
+            "__typename": "Auction",
+            "id": "QXVjdGlvbl9mY2QwYzkxMi00ZjIwLTQwNjUtODdjNS03M2E3NDgxODRlN2M=",
+            "sessions": [
+                {
+                    "lotCards": [
+                        {
+                            "lotId": "626b8609-d081-499e-8441-a400e8acd4a1",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjI2Yjg2MDktZDA4MS00OTllLTg0NDEtYTQwMGU4YWNkNGExX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82MjZiODYwOS1kMDgxLTQ5OWUtODQ0MS1hNDAwZThhY2Q0YTE=",
+                            "currentBid": {
+                                "amount": "18000"
+                            }
+                        },
+                        {
+                            "lotId": "05a9084d-6362-4f2b-a093-ccc665c29f81",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMDVhOTA4NGQtNjM2Mi00ZjJiLWEwOTMtY2NjNjY1YzI5ZjgxX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wNWE5MDg0ZC02MzYyLTRmMmItYTA5My1jY2M2NjVjMjlmODE=",
+                            "currentBid": {
+                                "amount": "28000"
+                            }
+                        },
+                        {
+                            "lotId": "39238ea3-b299-4647-b74c-a5ec26f839b1",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMzkyMzhlYTMtYjI5OS00NjQ3LWI3NGMtYTVlYzI2ZjgzOWIxX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8zOTIzOGVhMy1iMjk5LTQ2NDctYjc0Yy1hNWVjMjZmODM5YjE=",
+                            "currentBid": {
+                                "amount": "11000"
+                            }
+                        },
+                        {
+                            "lotId": "08585642-72a0-4ee7-a1e3-3fa539977ce6",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMDg1ODU2NDItNzJhMC00ZWU3LWExZTMtM2ZhNTM5OTc3Y2U2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wODU4NTY0Mi03MmEwLTRlZTctYTFlMy0zZmE1Mzk5NzdjZTY=",
+                            "currentBid": {
+                                "amount": "28000"
+                            }
+                        },
+                        {
+                            "lotId": "616fb349-ab1d-4e15-9d01-1554e9a5ed62",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjE2ZmIzNDktYWIxZC00ZTE1LTlkMDEtMTU1NGU5YTVlZDYyX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82MTZmYjM0OS1hYjFkLTRlMTUtOWQwMS0xNTU0ZTlhNWVkNjI=",
+                            "currentBid": {
+                                "amount": "8000"
+                            }
+                        },
+                        {
+                            "lotId": "e33a1ee8-8213-4710-84ef-5e12635052c8",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZTMzYTFlZTgtODIxMy00NzEwLTg0ZWYtNWUxMjYzNTA1MmM4X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9lMzNhMWVlOC04MjEzLTQ3MTAtODRlZi01ZTEyNjM1MDUyYzg=",
+                            "currentBid": {
+                                "amount": "16000"
+                            }
+                        },
+                        {
+                            "lotId": "77f183c8-1c8f-4313-94b9-ab9917112fb9",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNzdmMTgzYzgtMWM4Zi00MzEzLTk0YjktYWI5OTE3MTEyZmI5X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF83N2YxODNjOC0xYzhmLTQzMTMtOTRiOS1hYjk5MTcxMTJmYjk=",
+                            "currentBid": {
+                                "amount": "6500"
+                            }
+                        },
+                        {
+                            "lotId": "199315b8-f632-4aa0-b30e-fdd07516c78d",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMTk5MzE1YjgtZjYzMi00YWEwLWIzMGUtZmRkMDc1MTZjNzhkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8xOTkzMTViOC1mNjMyLTRhYTAtYjMwZS1mZGQwNzUxNmM3OGQ=",
+                            "currentBid": {
+                                "amount": "20000"
+                            }
+                        },
+                        {
+                            "lotId": "39430395-f540-47b1-a8fc-c21b6e9f833a",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMzk0MzAzOTUtZjU0MC00N2IxLWE4ZmMtYzIxYjZlOWY4MzNhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8zOTQzMDM5NS1mNTQwLTQ3YjEtYThmYy1jMjFiNmU5ZjgzM2E=",
+                            "currentBid": {
+                                "amount": "15000"
+                            }
+                        },
+                        {
+                            "lotId": "2838b805-fedf-474b-b62c-0956738bb916",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMjgzOGI4MDUtZmVkZi00NzRiLWI2MmMtMDk1NjczOGJiOTE2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yODM4YjgwNS1mZWRmLTQ3NGItYjYyYy0wOTU2NzM4YmI5MTY=",
+                            "currentBid": {
+                                "amount": "10000"
+                            }
+                        },
+                        {
+                            "lotId": "b4089b20-eaf8-4632-89fc-987b7d8bf7e6",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYjQwODliMjAtZWFmOC00NjMyLTg5ZmMtOTg3YjdkOGJmN2U2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iNDA4OWIyMC1lYWY4LTQ2MzItODlmYy05ODdiN2Q4YmY3ZTY=",
+                            "currentBid": {
+                                "amount": "11000"
+                            }
+                        },
+                        {
+                            "lotId": "1e3e18ae-475b-4279-8747-f3aad5893cfe",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMWUzZTE4YWUtNDc1Yi00Mjc5LTg3NDctZjNhYWQ1ODkzY2ZlX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8xZTNlMThhZS00NzViLTQyNzktODc0Ny1mM2FhZDU4OTNjZmU=",
+                            "currentBid": {
+                                "amount": "22000"
+                            }
+                        },
+                        {
+                            "lotId": "17880470-684d-4aec-92b4-0ec5e57e63f4",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMTc4ODA0NzAtNjg0ZC00YWVjLTkyYjQtMGVjNWU1N2U2M2Y0X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8xNzg4MDQ3MC02ODRkLTRhZWMtOTJiNC0wZWM1ZTU3ZTYzZjQ=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "0f6b0596-89f5-4c28-a6fb-fba164c88d07",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMGY2YjA1OTYtODlmNS00YzI4LWE2ZmItZmJhMTY0Yzg4ZDA3X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wZjZiMDU5Ni04OWY1LTRjMjgtYTZmYi1mYmExNjRjODhkMDc=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "fc49cadd-dac5-4883-a0e3-905b0ffbb110",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZmM0OWNhZGQtZGFjNS00ODgzLWEwZTMtOTA1YjBmZmJiMTEwX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9mYzQ5Y2FkZC1kYWM1LTQ4ODMtYTBlMy05MDViMGZmYmIxMTA=",
+                            "currentBid": {
+                                "amount": "20000"
+                            }
+                        },
+                        {
+                            "lotId": "2437b681-a5b8-41c3-a3d6-51f58e57f1d1",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMjQzN2I2ODEtYTViOC00MWMzLWEzZDYtNTFmNThlNTdmMWQxX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yNDM3YjY4MS1hNWI4LTQxYzMtYTNkNi01MWY1OGU1N2YxZDE=",
+                            "currentBid": {
+                                "amount": "17000"
+                            }
+                        },
+                        {
+                            "lotId": "8bec4341-1a19-42d8-bdd9-0b30925dca8c",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOGJlYzQzNDEtMWExOS00MmQ4LWJkZDktMGIzMDkyNWRjYThjX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF84YmVjNDM0MS0xYTE5LTQyZDgtYmRkOS0wYjMwOTI1ZGNhOGM=",
+                            "currentBid": {
+                                "amount": "11000"
+                            }
+                        },
+                        {
+                            "lotId": "4c6a2861-49d5-4aee-9a45-e38229d83fca",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNGM2YTI4NjEtNDlkNS00YWVlLTlhNDUtZTM4MjI5ZDgzZmNhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80YzZhMjg2MS00OWQ1LTRhZWUtOWE0NS1lMzgyMjlkODNmY2E=",
+                            "currentBid": {
+                                "amount": "26000"
+                            }
+                        },
+                        {
+                            "lotId": "47f74bed-afa0-436c-a862-3983b0684c62",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNDdmNzRiZWQtYWZhMC00MzZjLWE4NjItMzk4M2IwNjg0YzYyX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80N2Y3NGJlZC1hZmEwLTQzNmMtYTg2Mi0zOTgzYjA2ODRjNjI=",
+                            "currentBid": {
+                                "amount": "25000"
+                            }
+                        },
+                        {
+                            "lotId": "7acff40f-e900-4e9e-b4c1-af6a7f720374",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fN2FjZmY0MGYtZTkwMC00ZTllLWI0YzEtYWY2YTdmNzIwMzc0X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF83YWNmZjQwZi1lOTAwLTRlOWUtYjRjMS1hZjZhN2Y3MjAzNzQ=",
+                            "currentBid": {
+                                "amount": "28000"
+                            }
+                        },
+                        {
+                            "lotId": "17d7f595-a8c4-4813-a577-3c26ead9460d",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMTdkN2Y1OTUtYThjNC00ODEzLWE1NzctM2MyNmVhZDk0NjBkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8xN2Q3ZjU5NS1hOGM0LTQ4MTMtYTU3Ny0zYzI2ZWFkOTQ2MGQ=",
+                            "currentBid": {
+                                "amount": "24000"
+                            }
+                        },
+                        {
+                            "lotId": "5aecbfbf-77f0-48ff-8965-2b221f9313dd",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNWFlY2JmYmYtNzdmMC00OGZmLTg5NjUtMmIyMjFmOTMxM2RkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81YWVjYmZiZi03N2YwLTQ4ZmYtODk2NS0yYjIyMWY5MzEzZGQ=",
+                            "currentBid": {
+                                "amount": "6000"
+                            }
+                        },
+                        {
+                            "lotId": "32777701-b289-48bb-a34c-39ac1077071f",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMzI3Nzc3MDEtYjI4OS00OGJiLWEzNGMtMzlhYzEwNzcwNzFmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8zMjc3NzcwMS1iMjg5LTQ4YmItYTM0Yy0zOWFjMTA3NzA3MWY=",
+                            "currentBid": {
+                                "amount": "11000"
+                            }
+                        },
+                        {
+                            "lotId": "62b62bb8-5bc2-4b25-8ec7-3ab36ec06ac1",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjJiNjJiYjgtNWJjMi00YjI1LThlYzctM2FiMzZlYzA2YWMxX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82MmI2MmJiOC01YmMyLTRiMjUtOGVjNy0zYWIzNmVjMDZhYzE=",
+                            "currentBid": {
+                                "amount": "15000"
+                            }
+                        },
+                        {
+                            "lotId": "1cc9d0b7-7c00-475d-916a-0e157a7d2256",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMWNjOWQwYjctN2MwMC00NzVkLTkxNmEtMGUxNTdhN2QyMjU2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8xY2M5ZDBiNy03YzAwLTQ3NWQtOTE2YS0wZTE1N2E3ZDIyNTY=",
+                            "currentBid": {
+                                "amount": "68000"
+                            }
+                        },
+                        {
+                            "lotId": "182ce251-6b77-47f9-84ad-6697d022353d",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMTgyY2UyNTEtNmI3Ny00N2Y5LTg0YWQtNjY5N2QwMjIzNTNkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8xODJjZTI1MS02Yjc3LTQ3ZjktODRhZC02Njk3ZDAyMjM1M2Q=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "4ec78bd4-69d8-49ef-968d-b4da3fa016c4",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNGVjNzhiZDQtNjlkOC00OWVmLTk2OGQtYjRkYTNmYTAxNmM0X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80ZWM3OGJkNC02OWQ4LTQ5ZWYtOTY4ZC1iNGRhM2ZhMDE2YzQ=",
+                            "currentBid": {
+                                "amount": "10000"
+                            }
+                        },
+                        {
+                            "lotId": "697fb24d-1d44-450f-a63b-3a12505572b0",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjk3ZmIyNGQtMWQ0NC00NTBmLWE2M2ItM2ExMjUwNTU3MmIwX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82OTdmYjI0ZC0xZDQ0LTQ1MGYtYTYzYi0zYTEyNTA1NTcyYjA=",
+                            "currentBid": {
+                                "amount": "90000"
+                            }
+                        },
+                        {
+                            "lotId": "6bb06f51-085a-4991-86cb-506c8e229045",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNmJiMDZmNTEtMDg1YS00OTkxLTg2Y2ItNTA2YzhlMjI5MDQ1X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82YmIwNmY1MS0wODVhLTQ5OTEtODZjYi01MDZjOGUyMjkwNDU=",
+                            "currentBid": {
+                                "amount": "12000"
+                            }
+                        },
+                        {
+                            "lotId": "6087df58-28cb-4617-8758-f02d4cc52f98",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjA4N2RmNTgtMjhjYi00NjE3LTg3NTgtZjAyZDRjYzUyZjk4X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82MDg3ZGY1OC0yOGNiLTQ2MTctODc1OC1mMDJkNGNjNTJmOTg=",
+                            "currentBid": {
+                                "amount": "8000"
+                            }
+                        },
+                        {
+                            "lotId": "ca0eda8f-18ee-41db-b68a-70aa6a5b9da1",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fY2EwZWRhOGYtMThlZS00MWRiLWI2OGEtNzBhYTZhNWI5ZGExX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9jYTBlZGE4Zi0xOGVlLTQxZGItYjY4YS03MGFhNmE1YjlkYTE=",
+                            "currentBid": {
+                                "amount": "13000"
+                            }
+                        },
+                        {
+                            "lotId": "0d1545c9-ef47-4af3-91a3-1c5d3adcbe7b",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMGQxNTQ1YzktZWY0Ny00YWYzLTkxYTMtMWM1ZDNhZGNiZTdiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wZDE1NDVjOS1lZjQ3LTRhZjMtOTFhMy0xYzVkM2FkY2JlN2I=",
+                            "currentBid": {
+                                "amount": "220000"
+                            }
+                        },
+                        {
+                            "lotId": "bc4fc9be-7fd3-4c6d-b800-9a38817b5b4a",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYmM0ZmM5YmUtN2ZkMy00YzZkLWI4MDAtOWEzODgxN2I1YjRhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iYzRmYzliZS03ZmQzLTRjNmQtYjgwMC05YTM4ODE3YjViNGE=",
+                            "currentBid": {
+                                "amount": "7500"
+                            }
+                        },
+                        {
+                            "lotId": "fa2608eb-c93f-4d45-b9cd-53dc304ca2ee",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZmEyNjA4ZWItYzkzZi00ZDQ1LWI5Y2QtNTNkYzMwNGNhMmVlX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9mYTI2MDhlYi1jOTNmLTRkNDUtYjljZC01M2RjMzA0Y2EyZWU=",
+                            "currentBid": {
+                                "amount": "13000"
+                            }
+                        },
+                        {
+                            "lotId": "5cb0596a-c0d7-45ee-9f26-7b2a11e423d3",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNWNiMDU5NmEtYzBkNy00NWVlLTlmMjYtN2IyYTExZTQyM2QzX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81Y2IwNTk2YS1jMGQ3LTQ1ZWUtOWYyNi03YjJhMTFlNDIzZDM=",
+                            "currentBid": {
+                                "amount": "16000"
+                            }
+                        },
+                        {
+                            "lotId": "619d3535-d2c6-4da9-8db7-c20323c1cd66",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjE5ZDM1MzUtZDJjNi00ZGE5LThkYjctYzIwMzIzYzFjZDY2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82MTlkMzUzNS1kMmM2LTRkYTktOGRiNy1jMjAzMjNjMWNkNjY=",
+                            "currentBid": {
+                                "amount": "35000"
+                            }
+                        },
+                        {
+                            "lotId": "648ce74f-8d95-49d0-afa0-4615582b379d",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjQ4Y2U3NGYtOGQ5NS00OWQwLWFmYTAtNDYxNTU4MmIzNzlkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82NDhjZTc0Zi04ZDk1LTQ5ZDAtYWZhMC00NjE1NTgyYjM3OWQ=",
+                            "currentBid": {
+                                "amount": "6500"
+                            }
+                        },
+                        {
+                            "lotId": "e840ab77-8df2-4a28-b7d2-625a1e6671fc",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZTg0MGFiNzctOGRmMi00YTI4LWI3ZDItNjI1YTFlNjY3MWZjX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9lODQwYWI3Ny04ZGYyLTRhMjgtYjdkMi02MjVhMWU2NjcxZmM=",
+                            "currentBid": {
+                                "amount": "8000"
+                            }
+                        },
+                        {
+                            "lotId": "25a867c8-0c3c-40df-8534-7b73e9c2f924",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMjVhODY3YzgtMGMzYy00MGRmLTg1MzQtN2I3M2U5YzJmOTI0X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yNWE4NjdjOC0wYzNjLTQwZGYtODUzNC03YjczZTljMmY5MjQ=",
+                            "currentBid": {
+                                "amount": "16000"
+                            }
+                        },
+                        {
+                            "lotId": "f73b47f7-9fe1-47e9-8a1e-604c8500d399",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZjczYjQ3ZjctOWZlMS00N2U5LThhMWUtNjA0Yzg1MDBkMzk5X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9mNzNiNDdmNy05ZmUxLTQ3ZTktOGExZS02MDRjODUwMGQzOTk=",
+                            "currentBid": {
+                                "amount": "7500"
+                            }
+                        },
+                        {
+                            "lotId": "ae88fbcc-e763-40e7-a187-3799288b4b8a",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYWU4OGZiY2MtZTc2My00MGU3LWExODctMzc5OTI4OGI0YjhhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9hZTg4ZmJjYy1lNzYzLTQwZTctYTE4Ny0zNzk5Mjg4YjRiOGE=",
+                            "currentBid": {
+                                "amount": "9500"
+                            }
+                        },
+                        {
+                            "lotId": "f8c39e4d-a224-4d04-a98e-6c62ad074930",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZjhjMzllNGQtYTIyNC00ZDA0LWE5OGUtNmM2MmFkMDc0OTMwX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9mOGMzOWU0ZC1hMjI0LTRkMDQtYTk4ZS02YzYyYWQwNzQ5MzA=",
+                            "currentBid": {
+                                "amount": "105000"
+                            }
+                        },
+                        {
+                            "lotId": "550a1a73-90ec-4c32-9708-4bd3c2ab170f",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNTUwYTFhNzMtOTBlYy00YzMyLTk3MDgtNGJkM2MyYWIxNzBmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81NTBhMWE3My05MGVjLTRjMzItOTcwOC00YmQzYzJhYjE3MGY=",
+                            "currentBid": {
+                                "amount": "300000"
+                            }
+                        },
+                        {
+                            "lotId": "a53194be-01e8-4622-a052-239728441926",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYTUzMTk0YmUtMDFlOC00NjIyLWEwNTItMjM5NzI4NDQxOTI2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9hNTMxOTRiZS0wMWU4LTQ2MjItYTA1Mi0yMzk3Mjg0NDE5MjY=",
+                            "currentBid": {
+                                "amount": "3800"
+                            }
+                        },
+                        {
+                            "lotId": "94fdaa33-603b-43fa-bf41-3ffd6ea90d52",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOTRmZGFhMzMtNjAzYi00M2ZhLWJmNDEtM2ZmZDZlYTkwZDUyX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF85NGZkYWEzMy02MDNiLTQzZmEtYmY0MS0zZmZkNmVhOTBkNTI=",
+                            "currentBid": {
+                                "amount": "4000"
+                            }
+                        },
+                        {
+                            "lotId": "0ea1fdea-9ecb-4012-ad27-8cb775883673",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMGVhMWZkZWEtOWVjYi00MDEyLWFkMjctOGNiNzc1ODgzNjczX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wZWExZmRlYS05ZWNiLTQwMTItYWQyNy04Y2I3NzU4ODM2NzM=",
+                            "currentBid": {
+                                "amount": "45000"
+                            }
+                        },
+                        {
+                            "lotId": "915a5b2c-f0b4-4566-95a4-964ffbb9a43c",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOTE1YTViMmMtZjBiNC00NTY2LTk1YTQtOTY0ZmZiYjlhNDNjX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF85MTVhNWIyYy1mMGI0LTQ1NjYtOTVhNC05NjRmZmJiOWE0M2M=",
+                            "currentBid": {
+                                "amount": "22000"
+                            }
+                        },
+                        {
+                            "lotId": "46ae9ab7-2f20-4d93-a3a1-be9a7504c256",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNDZhZTlhYjctMmYyMC00ZDkzLWEzYTEtYmU5YTc1MDRjMjU2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80NmFlOWFiNy0yZjIwLTRkOTMtYTNhMS1iZTlhNzUwNGMyNTY=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "944ad1de-5b1b-49b5-8303-c885f2894c60",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOTQ0YWQxZGUtNWIxYi00OWI1LTgzMDMtYzg4NWYyODk0YzYwX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF85NDRhZDFkZS01YjFiLTQ5YjUtODMwMy1jODg1ZjI4OTRjNjA=",
+                            "currentBid": {
+                                "amount": "38000"
+                            }
+                        },
+                        {
+                            "lotId": "b8ccdae6-f782-4c3e-a837-d57023e53eea",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYjhjY2RhZTYtZjc4Mi00YzNlLWE4MzctZDU3MDIzZTUzZWVhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iOGNjZGFlNi1mNzgyLTRjM2UtYTgzNy1kNTcwMjNlNTNlZWE=",
+                            "currentBid": {
+                                "amount": "17000"
+                            }
+                        },
+                        {
+                            "lotId": "d306c324-fc91-4593-ba24-3b5a9add46a7",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZDMwNmMzMjQtZmM5MS00NTkzLWJhMjQtM2I1YTlhZGQ0NmE3X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9kMzA2YzMyNC1mYzkxLTQ1OTMtYmEyNC0zYjVhOWFkZDQ2YTc=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "7a7d56d5-d7fe-44e0-9551-4bf5237132ef",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fN2E3ZDU2ZDUtZDdmZS00NGUwLTk1NTEtNGJmNTIzNzEzMmVmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF83YTdkNTZkNS1kN2ZlLTQ0ZTAtOTU1MS00YmY1MjM3MTMyZWY=",
+                            "currentBid": {
+                                "amount": "24000"
+                            }
+                        },
+                        {
+                            "lotId": "621437c7-5c44-4b66-a088-3a6ca807ef91",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjIxNDM3YzctNWM0NC00YjY2LWEwODgtM2E2Y2E4MDdlZjkxX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82MjE0MzdjNy01YzQ0LTRiNjYtYTA4OC0zYTZjYTgwN2VmOTE=",
+                            "currentBid": {
+                                "amount": "12000"
+                            }
+                        },
+                        {
+                            "lotId": "21752417-c98a-47c7-a00a-6436ff7db458",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMjE3NTI0MTctYzk4YS00N2M3LWEwMGEtNjQzNmZmN2RiNDU4X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yMTc1MjQxNy1jOThhLTQ3YzctYTAwYS02NDM2ZmY3ZGI0NTg=",
+                            "currentBid": {
+                                "amount": "28000"
+                            }
+                        },
+                        {
+                            "lotId": "8e80f2f3-723d-4028-8752-783a483b95fd",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOGU4MGYyZjMtNzIzZC00MDI4LTg3NTItNzgzYTQ4M2I5NWZkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF84ZTgwZjJmMy03MjNkLTQwMjgtODc1Mi03ODNhNDgzYjk1ZmQ=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "958e7ca1-7494-4f01-a27b-8a855530d0c3",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOTU4ZTdjYTEtNzQ5NC00ZjAxLWEyN2ItOGE4NTU1MzBkMGMzX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF85NThlN2NhMS03NDk0LTRmMDEtYTI3Yi04YTg1NTUzMGQwYzM=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "c2c8d483-2192-40c7-9fc1-1fa1eabbc4e7",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYzJjOGQ0ODMtMjE5Mi00MGM3LTlmYzEtMWZhMWVhYmJjNGU3X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9jMmM4ZDQ4My0yMTkyLTQwYzctOWZjMS0xZmExZWFiYmM0ZTc=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "e45133e4-d231-427a-96ad-909763f3f6df",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZTQ1MTMzZTQtZDIzMS00MjdhLTk2YWQtOTA5NzYzZjNmNmRmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9lNDUxMzNlNC1kMjMxLTQyN2EtOTZhZC05MDk3NjNmM2Y2ZGY=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "ced11d3a-e590-4a46-a06b-18f3cb18766b",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fY2VkMTFkM2EtZTU5MC00YTQ2LWEwNmItMThmM2NiMTg3NjZiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9jZWQxMWQzYS1lNTkwLTRhNDYtYTA2Yi0xOGYzY2IxODc2NmI=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "b0915b08-1c9c-461a-a19e-ca4c9a89a8ca",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYjA5MTViMDgtMWM5Yy00NjFhLWExOWUtY2E0YzlhODlhOGNhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iMDkxNWIwOC0xYzljLTQ2MWEtYTE5ZS1jYTRjOWE4OWE4Y2E=",
+                            "currentBid": {
+                                "amount": "6500"
+                            }
+                        },
+                        {
+                            "lotId": "ea3e0d13-bba5-4768-8ca1-83c273bf2bdf",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZWEzZTBkMTMtYmJhNS00NzY4LThjYTEtODNjMjczYmYyYmRmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9lYTNlMGQxMy1iYmE1LTQ3NjgtOGNhMS04M2MyNzNiZjJiZGY=",
+                            "currentBid": {
+                                "amount": "8000"
+                            }
+                        },
+                        {
+                            "lotId": "ddd9615f-7653-4ef0-87b8-31c1e4de16eb",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZGRkOTYxNWYtNzY1My00ZWYwLTg3YjgtMzFjMWU0ZGUxNmViX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9kZGQ5NjE1Zi03NjUzLTRlZjAtODdiOC0zMWMxZTRkZTE2ZWI=",
+                            "currentBid": {
+                                "amount": "60000"
+                            }
+                        },
+                        {
+                            "lotId": "04c56c83-c8cf-4bc3-99c0-7eb88416ccb7",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMDRjNTZjODMtYzhjZi00YmMzLTk5YzAtN2ViODg0MTZjY2I3X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wNGM1NmM4My1jOGNmLTRiYzMtOTljMC03ZWI4ODQxNmNjYjc=",
+                            "currentBid": {
+                                "amount": "4800"
+                            }
+                        },
+                        {
+                            "lotId": "4f058655-bd1e-4e44-94e2-8cc5b280584f",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNGYwNTg2NTUtYmQxZS00ZTQ0LTk0ZTItOGNjNWIyODA1ODRmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80ZjA1ODY1NS1iZDFlLTRlNDQtOTRlMi04Y2M1YjI4MDU4NGY=",
+                            "currentBid": {
+                                "amount": "20000"
+                            }
+                        },
+                        {
+                            "lotId": "24f16cc4-4eb6-434d-be6c-30b4342bbc39",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMjRmMTZjYzQtNGViNi00MzRkLWJlNmMtMzBiNDM0MmJiYzM5X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yNGYxNmNjNC00ZWI2LTQzNGQtYmU2Yy0zMGI0MzQyYmJjMzk=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "2da2ecaa-7efc-4a80-a301-dcf9eb1a3e58",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMmRhMmVjYWEtN2VmYy00YTgwLWEzMDEtZGNmOWViMWEzZTU4X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yZGEyZWNhYS03ZWZjLTRhODAtYTMwMS1kY2Y5ZWIxYTNlNTg=",
+                            "currentBid": {
+                                "amount": "9000"
+                            }
+                        },
+                        {
+                            "lotId": "390c4e6c-1353-4485-9913-0192f38a01e9",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMzkwYzRlNmMtMTM1My00NDg1LTk5MTMtMDE5MmYzOGEwMWU5X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8zOTBjNGU2Yy0xMzUzLTQ0ODUtOTkxMy0wMTkyZjM4YTAxZTk=",
+                            "currentBid": {
+                                "amount": "10000"
+                            }
+                        },
+                        {
+                            "lotId": "5e950209-2f7f-4727-b367-3522c1c0efff",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNWU5NTAyMDktMmY3Zi00NzI3LWIzNjctMzUyMmMxYzBlZmZmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81ZTk1MDIwOS0yZjdmLTQ3MjctYjM2Ny0zNTIyYzFjMGVmZmY=",
+                            "currentBid": {
+                                "amount": "180000"
+                            }
+                        },
+                        {
+                            "lotId": "529fe8e3-2e33-4eaa-9278-48cfef5ef0e1",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNTI5ZmU4ZTMtMmUzMy00ZWFhLTkyNzgtNDhjZmVmNWVmMGUxX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81MjlmZThlMy0yZTMzLTRlYWEtOTI3OC00OGNmZWY1ZWYwZTE=",
+                            "currentBid": {
+                                "amount": "5500"
+                            }
+                        },
+                        {
+                            "lotId": "4933dfea-6cfb-4f01-9d16-32ba48bca6d6",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNDkzM2RmZWEtNmNmYi00ZjAxLTlkMTYtMzJiYTQ4YmNhNmQ2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80OTMzZGZlYS02Y2ZiLTRmMDEtOWQxNi0zMmJhNDhiY2E2ZDY=",
+                            "currentBid": {
+                                "amount": "4200"
+                            }
+                        },
+                        {
+                            "lotId": "9a96aeda-f21e-4b94-bbbb-07a7aea926bb",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOWE5NmFlZGEtZjIxZS00Yjk0LWJiYmItMDdhN2FlYTkyNmJiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF85YTk2YWVkYS1mMjFlLTRiOTQtYmJiYi0wN2E3YWVhOTI2YmI=",
+                            "currentBid": {
+                                "amount": "7500"
+                            }
+                        },
+                        {
+                            "lotId": "ac8afa5b-6301-44d4-a0d0-31428eb3ff1b",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYWM4YWZhNWItNjMwMS00NGQ0LWEwZDAtMzE0MjhlYjNmZjFiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9hYzhhZmE1Yi02MzAxLTQ0ZDQtYTBkMC0zMTQyOGViM2ZmMWI=",
+                            "currentBid": {
+                                "amount": "32000"
+                            }
+                        },
+                        {
+                            "lotId": "550f7fbe-8702-402a-a59a-a7baffd2bf34",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNTUwZjdmYmUtODcwMi00MDJhLWE1OWEtYTdiYWZmZDJiZjM0X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81NTBmN2ZiZS04NzAyLTQwMmEtYTU5YS1hN2JhZmZkMmJmMzQ=",
+                            "currentBid": {
+                                "amount": "9500"
+                            }
+                        },
+                        {
+                            "lotId": "b3b4e19e-1f1f-49ee-9628-e41345a3a4f6",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYjNiNGUxOWUtMWYxZi00OWVlLTk2MjgtZTQxMzQ1YTNhNGY2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iM2I0ZTE5ZS0xZjFmLTQ5ZWUtOTYyOC1lNDEzNDVhM2E0ZjY=",
+                            "currentBid": {
+                                "amount": "10000"
+                            }
+                        },
+                        {
+                            "lotId": "bd3076f0-7caf-4419-a151-34dfa42a9fa2",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYmQzMDc2ZjAtN2NhZi00NDE5LWExNTEtMzRkZmE0MmE5ZmEyX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iZDMwNzZmMC03Y2FmLTQ0MTktYTE1MS0zNGRmYTQyYTlmYTI=",
+                            "currentBid": {
+                                "amount": "7500"
+                            }
+                        },
+                        {
+                            "lotId": "71ee204f-7aac-4d84-9188-208b17f71728",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNzFlZTIwNGYtN2FhYy00ZDg0LTkxODgtMjA4YjE3ZjcxNzI4X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF83MWVlMjA0Zi03YWFjLTRkODQtOTE4OC0yMDhiMTdmNzE3Mjg=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "55d5dc49-cbee-4130-9b87-df45dbc94d4a",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNTVkNWRjNDktY2JlZS00MTMwLTliODctZGY0NWRiYzk0ZDRhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81NWQ1ZGM0OS1jYmVlLTQxMzAtOWI4Ny1kZjQ1ZGJjOTRkNGE=",
+                            "currentBid": {
+                                "amount": "12000"
+                            }
+                        },
+                        {
+                            "lotId": "6d318823-ee66-45a9-b7b8-aa6bf2befcea",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNmQzMTg4MjMtZWU2Ni00NWE5LWI3YjgtYWE2YmYyYmVmY2VhX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82ZDMxODgyMy1lZTY2LTQ1YTktYjdiOC1hYTZiZjJiZWZjZWE=",
+                            "currentBid": {
+                                "amount": "4800"
+                            }
+                        },
+                        {
+                            "lotId": "44bb1c7c-7b49-402f-8e82-b34bc2f1f34d",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNDRiYjFjN2MtN2I0OS00MDJmLThlODItYjM0YmMyZjFmMzRkX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80NGJiMWM3Yy03YjQ5LTQwMmYtOGU4Mi1iMzRiYzJmMWYzNGQ=",
+                            "currentBid": {
+                                "amount": "17000"
+                            }
+                        },
+                        {
+                            "lotId": "5dd90cb6-6976-45cf-8c0d-ee64b4f66ac3",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNWRkOTBjYjYtNjk3Ni00NWNmLThjMGQtZWU2NGI0ZjY2YWMzX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF81ZGQ5MGNiNi02OTc2LTQ1Y2YtOGMwZC1lZTY0YjRmNjZhYzM=",
+                            "currentBid": {
+                                "amount": "26000"
+                            }
+                        },
+                        {
+                            "lotId": "2b189965-a3dd-467e-9357-aa96621e91bb",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMmIxODk5NjUtYTNkZC00NjdlLTkzNTctYWE5NjYyMWU5MWJiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8yYjE4OTk2NS1hM2RkLTQ2N2UtOTM1Ny1hYTk2NjIxZTkxYmI=",
+                            "currentBid": {
+                                "amount": "4000"
+                            }
+                        },
+                        {
+                            "lotId": "6ec064f3-5562-4012-ab0d-a2b5955005b5",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNmVjMDY0ZjMtNTU2Mi00MDEyLWFiMGQtYTJiNTk1NTAwNWI1X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82ZWMwNjRmMy01NTYyLTQwMTItYWIwZC1hMmI1OTU1MDA1YjU=",
+                            "currentBid": {
+                                "amount": "8500"
+                            }
+                        },
+                        {
+                            "lotId": "63b96cf5-3f4b-474e-8a8b-ead3d10be5cb",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNjNiOTZjZjUtM2Y0Yi00NzRlLThhOGItZWFkM2QxMGJlNWNiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF82M2I5NmNmNS0zZjRiLTQ3NGUtOGE4Yi1lYWQzZDEwYmU1Y2I=",
+                            "currentBid": {
+                                "amount": "24000"
+                            }
+                        },
+                        {
+                            "lotId": "0768e9f8-cab3-45a1-b806-10e1d068b453",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fMDc2OGU5ZjgtY2FiMy00NWExLWI4MDYtMTBlMWQwNjhiNDUzX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF8wNzY4ZTlmOC1jYWIzLTQ1YTEtYjgwNi0xMGUxZDA2OGI0NTM=",
+                            "currentBid": {
+                                "amount": "20000"
+                            }
+                        },
+                        {
+                            "lotId": "f9605f4a-5366-47b8-ab27-45086c6a0f57",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZjk2MDVmNGEtNTM2Ni00N2I4LWFiMjctNDUwODZjNmEwZjU3X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9mOTYwNWY0YS01MzY2LTQ3YjgtYWIyNy00NTA4NmM2YTBmNTc=",
+                            "currentBid": {
+                                "amount": "180000"
+                            }
+                        },
+                        {
+                            "lotId": "efee0c1f-f716-425e-9b94-22d74fed4689",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZWZlZTBjMWYtZjcxNi00MjVlLTliOTQtMjJkNzRmZWQ0Njg5X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9lZmVlMGMxZi1mNzE2LTQyNWUtOWI5NC0yMmQ3NGZlZDQ2ODk=",
+                            "currentBid": {
+                                "amount": "17000"
+                            }
+                        },
+                        {
+                            "lotId": "b39cc014-fdd9-4bcc-9dde-dfa3646c61a6",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYjM5Y2MwMTQtZmRkOS00YmNjLTlkZGUtZGZhMzY0NmM2MWE2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9iMzljYzAxNC1mZGQ5LTRiY2MtOWRkZS1kZmEzNjQ2YzYxYTY=",
+                            "currentBid": {
+                                "amount": "28000"
+                            }
+                        },
+                        {
+                            "lotId": "9ea5fa89-2924-4065-9782-8efa492e2a7b",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fOWVhNWZhODktMjkyNC00MDY1LTk3ODItOGVmYTQ5MmUyYTdiX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF85ZWE1ZmE4OS0yOTI0LTQwNjUtOTc4Mi04ZWZhNDkyZTJhN2I=",
+                            "currentBid": {
+                                "amount": "30000"
+                            }
+                        },
+                        {
+                            "lotId": "7937f83e-8fd8-447d-a13e-efba8f40b7b2",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNzkzN2Y4M2UtOGZkOC00NDdkLWExM2UtZWZiYThmNDBiN2IyX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF83OTM3ZjgzZS04ZmQ4LTQ0N2QtYTEzZS1lZmJhOGY0MGI3YjI=",
+                            "currentBid": {
+                                "amount": "250000"
+                            }
+                        },
+                        {
+                            "lotId": "4af68126-74ab-4cb9-a795-1d39b769df16",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNGFmNjgxMjYtNzRhYi00Y2I5LWE3OTUtMWQzOWI3NjlkZjE2X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80YWY2ODEyNi03NGFiLTRjYjktYTc5NS0xZDM5Yjc2OWRmMTY=",
+                            "currentBid": {
+                                "amount": "13000"
+                            }
+                        },
+                        {
+                            "lotId": "ec027334-1265-4c0a-b3af-d498cf0b885e",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fZWMwMjczMzQtMTI2NS00YzBhLWIzYWYtZDQ5OGNmMGI4ODVlX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9lYzAyNzMzNC0xMjY1LTRjMGEtYjNhZi1kNDk4Y2YwYjg4NWU=",
+                            "currentBid": {
+                                "amount": "38000"
+                            }
+                        },
+                        {
+                            "lotId": "a911c3a3-0e62-4ed8-a56d-24f0fdc94c49",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYTkxMWMzYTMtMGU2Mi00ZWQ4LWE1NmQtMjRmMGZkYzk0YzQ5X3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9hOTExYzNhMy0wZTYyLTRlZDgtYTU2ZC0yNGYwZmRjOTRjNDk=",
+                            "currentBid": {
+                                "amount": "3500"
+                            }
+                        },
+                        {
+                            "lotId": "4325387f-3c2f-49ee-a067-688bfc842640",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fNDMyNTM4N2YtM2MyZi00OWVlLWEwNjctNjg4YmZjODQyNjQwX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF80MzI1Mzg3Zi0zYzJmLTQ5ZWUtYTA2Ny02ODhiZmM4NDI2NDA=",
+                            "currentBid": {
+                                "amount": "3200"
+                            }
+                        },
+                        {
+                            "lotId": "c05582a6-12c1-46b5-bd52-e6244a862c0f",
+                            "latestBid": {
+                                "bid": null,
+                                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fYzA1NTgyYTYtMTJjMS00NmI1LWJkNTItZTYyNDRhODYyYzBmX3VuZGVmaW5lZA=="
+                            },
+                            "id": "TG90Q2FyZF9jMDU1ODJhNi0xMmMxLTQ2YjUtYmQ1Mi1lNjI0NGE4NjJjMGY=",
+                            "currentBid": {
+                                "amount": "26000"
+                            }
+                        }
+                    ],
+                    "id": "U2Vzc2lvbl9mY2QwYzkxMi00ZjIwLTQwNjUtODdjNS03M2E3NDgxODRlN2NfMA=="
+                }
+            ],
+            "currency": "GBP",
+            "auctionType": "Live",
+            "location": "London",
+            "enrollment": {
+                "paddle": null
+            }
+        }
+    }
+}

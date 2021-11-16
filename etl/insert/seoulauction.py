@@ -46,6 +46,7 @@ def parseDataForInsert(f:str, data:dict):
             a.image_name = art['LOT_IMG_NAME']
             a.birth = art['BORN_YEAR'].replace('-','') if type(art['BORN_YEAR']) == str else art['BORN_YEAR']
             a.death = art['DIE_YEAR']
+            a.sale_title = art['SALE_TITLE_JSON'].get('ko','')
             a.auction_cate = 'online'
             art_list.append(a.__dict__)
         except Exception as e:
@@ -57,7 +58,7 @@ def parseDataForInsert(f:str, data:dict):
 
 #if __name__ == '__main__':
 p = r'F:\art\auc\datas\que\seoul'
-files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,670)]
+files = [(i,os.path.join(p,str(i)+'.json')) for i in range(1,700)]
 rows_list=[]
 for i,f in files:
     try:
@@ -68,7 +69,9 @@ for i,f in files:
     except Exception as e:
         pass
 df = pd.DataFrame(rows_list)
-df.to_csv('seoul_1003.csv',encoding='utf-8-sig')
+df.to_csv('seoul_1029.csv',encoding='utf-8-sig')
+
+
 
 # df.to_csv('seoul_827.csv',encoding='utf-8-sig')
 # df.head()

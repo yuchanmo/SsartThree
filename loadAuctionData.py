@@ -10,15 +10,16 @@ cols = ['auction_site', 'auction_url_num', 'auction_place',
        'unit_cd', 'size_length', 'size_width', 'mix_cd', 'mix_size', 'canvas',
        'medium_eng', 'medium_kor', 'description', 'estimate_high',
        'estimate_low', 'edition', 'image_name', 'art_info_source_id',
-       'auction_cate']
+       'auction_cate','birth','death','sale_title','half_year'
+       ,'canvas_size','artwork_type','size_length_inch','size_width_inch','mix_size_inch']
 
 conditions = {
     'artists':{
         'table':'artists',
         'schema':'dbo',
         'sql':'select * from artists',
-        'join_key' :['artist_name_kor','artist_name_eng'],
-        'columns':['artist_name_kor','artist_name_eng','artist_comment'],
+        'join_key' :['artist_name_kor','artist_name_eng','birth'],
+        'columns':['artist_name_kor','artist_name_eng','artist_comment','birth','death'],
         'filter_key' : 'artist_id',
         'final_columns': cols + ['artist_id',]
     },
@@ -26,7 +27,7 @@ conditions = {
         'table':'art_infos',
         'schema':'dbo',
         'sql':'select * from art_infos',
-        'join_key' :['artist_id','art_info_source_id','make_year','title_kor','title_eng','edition' ,'image_name'  ],
+        'join_key' :['artist_id','art_info_source_id','make_year','title_kor','title_eng','edition' ,'image_name'],
         'columns':['artist_id'
         ,'art_info_source_id'
         ,'make_year'
@@ -42,7 +43,13 @@ conditions = {
         ,'medium_kor'
         ,'description'
         ,'edition'
-        ,'image_name'        
+        ,'image_name'    
+        ,'canvas_size'
+        ,'artwork_type'
+        ,'half_year'
+        ,'size_length_inch'
+        ,'size_width_inch'
+        ,'mix_size_inch'    
         ],
         'filter_key' : 'art_info_id',
         'final_columns' : cols + ['art_info_id' ,'artist_id' ,'art_info_source_id']            
@@ -60,8 +67,8 @@ conditions = {
         'table':'auctions',
         'schema':'dbo',
         'sql':'select * from auctions',
-        'join_key' :['site_id','auction_url_num','auction_cate'],
-        'columns':['site_id','auction_url_num','auction_place','auction_date','auction_cate'],
+        'join_key' :['site_id','auction_url_num','auction_cate','sale_title'],
+        'columns':['site_id','auction_url_num','auction_place','auction_date','auction_cate','sale_title'],
         'filter_key' : 'auction_id',
         'final_columns': cols +  ['auction_id','site_id','art_info_id' ,'artist_id' ,'art_info_source_id',]             
     },
@@ -81,8 +88,7 @@ def filterNaNRows(tbl,cols):
 
 
 def filterNewExistData(left_df,right_df,join_key,filter_key):
-    try:
-        
+    try:        
         merged_df = pd.merge(left_df,right_df,left_on=join_key,right_on=join_key,suffixes=['','_y'],how='left')
         new_rows,exist_rows = merged_df[merged_df[filter_key].isnull()],merged_df[merged_df[filter_key].notnull()]
         return new_rows,exist_rows
@@ -116,18 +122,19 @@ def insertNewRows(original_df,table_key,val):
 
 
 #def loadData(path:str):
-path = r'seoul_913.csv'
+
+path= r'seoul_1003.csv'
+
 df = pd.read_csv(path,encoding='utf-8-sig')
-df = makeFeature(df)
-df.iloc[0]
+df = makeFeature(df)  
 df['art_info_source_id'] = 1
-df['auction_cate'] = 'online'
+#df['auction_cate'] = 'online'
 
 for k,v in conditions.items():
     print(f'insert {k} table')
     df = insertNewRows(df,k,v)
     print(len(df))
-    
+
 
 if __name__ =='__main__':
     pass
