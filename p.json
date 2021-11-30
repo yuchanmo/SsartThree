@@ -1,0 +1,301 @@
+{
+    "data": {
+        "lot": {
+            "__typename": "LotV2",
+            "auction": {
+                "auctionId": "50cc1392-7545-4e37-8d9b-a3329b91b0c2",
+                "location": "London",
+                "title": "Contemporary Curated ",
+                "auctionType": "Timed",
+                "currency": "GBP",
+                "id": "QXVjdGlvbl81MGNjMTM5Mi03NTQ1LTRlMzctOGQ5Yi1hMzMyOWI5MWIwYzI=",
+                "slug": {
+                    "year": "2021",
+                    "name": "contemporary-curated-5"
+                },
+                "__typename": "Auction",
+                "useCreatorSplit": true,
+                "sapSaleNumber": "L21027",
+                "departmentNames": [
+                    "Contemporary Art",
+                    "Marketing"
+                ],
+                "auctionSaleNumber": "L21027",
+                "enrichedCatalogueContentEnabled": true,
+                "isClosed": true,
+                "dates": {
+                    "__typename": "TimedAuctionDates",
+                    "acceptsBids": "2021-11-04T14:00Z",
+                    "startsToClose": "2021-11-10T14:00Z",
+                    "closed": "2021-11-10T16:06:29.604419Z",
+                    "id": "QXVjdGlvbkRhdGVzXzUwY2MxMzkyLTc1NDUtNGUzNy04ZDliLWEzMzI5YjkxYjBjMg=="
+                },
+                "auctionBidPhase": {
+                    "__typename": "TimedAuctionBidPhaseType",
+                    "timedBidPhase": "Closed"
+                },
+                "enrollment": {
+                    "paddle": null
+                }
+            },
+            "title": "Masetto",
+            "state": "Published",
+            "lotId": "82f42c31-3ea9-4565-88ab-97753ac910e1",
+            "bidState": {
+                "startingBid": "5000",
+                "isClosed": true,
+                "sold": {
+                    "__typename": "ResultVisible",
+                    "isSold": true,
+                    "premiums": {
+                        "finalPrice": {
+                            "currency": "GBP",
+                            "amount": "15120"
+                        },
+                        "id": "UHJlbWl1bXNfODJmNDJjMzEtM2VhOS00NTY1LTg4YWItOTc3NTNhYzkxMGUx"
+                    }
+                },
+                "id": "QmlkU3RhdGVfODJmNDJjMzEtM2VhOS00NTY1LTg4YWItOTc3NTNhYzkxMGUx",
+                "bidType": {
+                    "__typename": "TimedBidType",
+                    "state": {
+                        "__typename": "ClosedBidState",
+                        "id": "Q2xvc2VkQmlkU3RhdGVfODJmNDJjMzEtM2VhOS00NTY1LTg4YWItOTc3NTNhYzkxMGUx"
+                    },
+                    "id": "VGltZWRCaWRUeXBlXzgyZjQyYzMxLTNlYTktNDU2NS04OGFiLTk3NzUzYWM5MTBlMQ=="
+                },
+                "bidTypeV2": {
+                    "__typename": "TimedBidTypeV2",
+                    "timedBidPhase": "Closed"
+                },
+                "bidAsk": "13000",
+                "currentBid": {
+                    "currency": "GBP",
+                    "amount": "12000"
+                },
+                "numberOfBids": 10,
+                "reserveMet": true,
+                "closingTime": "2021-11-10T14:01Z",
+                "currentBidV2": {
+                    "amount": "12000"
+                }
+            },
+            "premiumLotState": {
+                "isPremium": false,
+                "userIsWhitelisted": false,
+                "id": "UHJlbWl1bUxvdFN0YXRlXzgyZjQyYzMxLTNlYTktNDU2NS04OGFiLTk3NzUzYWM5MTBlMV91bmRlZmluZWQ="
+            },
+            "lotNumber": {
+                "__typename": "VisibleLotNumber",
+                "lotNumber": "1"
+            },
+            "id": "TG90VjJfODJmNDJjMzEtM2VhOS00NTY1LTg4YWItOTc3NTNhYzkxMGUx",
+            "previousLot": null,
+            "nextLot": {
+                "lotId": "164632c0-8788-4661-9850-6fda6720c581",
+                "slug": "table-trouble-2",
+                "lotNumber": {
+                    "__typename": "VisibleLotNumber",
+                    "lotNumber": "2"
+                }
+            },
+            "objectSet": {
+                "objects": [
+                    {
+                        "__typename": "Object",
+                        "creators": [
+                            {
+                                "creatorId": 21951,
+                                "displayName": "Louis Fratino",
+                                "id": "Q3JlYXRvcl8yMTk1MQ=="
+                            }
+                        ],
+                        "id": "T2JqZWN0XzY5NTUwOQ==",
+                        "exhibited": ""
+                    }
+                ],
+                "id": "T2JqZWN0U2V0XzE3NjMxNA=="
+            },
+            "creatorPrefix": null,
+            "description": "<p>Louis Fratino</p><p>b. 1993</p><p><em>Masetto</em></p><p><br></p><p>signed and dated <em>2017</em> on the reverse</p><p>graphite on paper</p><p>22.8 by 30.7 cm. 9 by 12⅛ in.</p><p>framed: 36.7 by 46.1 cm. 14½ by 18⅛ in.</p>",
+            "estimate": {
+                "__typename": "LowHighEstimate",
+                "lowEstimate": "5000",
+                "highEstimate": "7000",
+                "__isEstimate": "LowHighEstimate"
+            },
+            "isPremium": false,
+            "slug": "masetto",
+            "latestBid": {
+                "bid": null,
+                "id": "TGF0ZXN0VXNlckJpZENvbm5lY3Rpb25fODJmNDJjMzEtM2VhOS00NTY1LTg4YWItOTc3NTNhYzkxMGUxX3VuZGVmaW5lZA=="
+            },
+            "session": {
+                "state": "PreOpen",
+                "id": "U2Vzc2lvbl81MGNjMTM5Mi03NTQ1LTRlMzctOGQ5Yi1hMzMyOWI5MWIwYzJfMA==",
+                "sessionId": 0,
+                "scheduledOpeningDate": "2021-11-04T14:00Z"
+            },
+            "isFollowing": false,
+            "lotTags": [],
+            "media": {
+                "images": [
+                    {
+                        "title": "L21027_C449Y_01_T3.jpg",
+                        "renditions": [
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/69/39/e769f75745ebaebc215604b25ba5/l21027-c449y-01-t3.jpg",
+                                "width": 2000,
+                                "height": 1504,
+                                "imageSize": "Original"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/b71ef72/2147483647/strip/true/crop/2000x1504+0+0/resize/1024x770!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F69%2F39%2Fe769f75745ebaebc215604b25ba5%2Fl21027-c449y-01-t3.jpg",
+                                "width": 1024,
+                                "height": 770,
+                                "imageSize": "Large"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/d80e50c/2147483647/strip/true/crop/2000x1504+0+0/resize/2048x1540!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F69%2F39%2Fe769f75745ebaebc215604b25ba5%2Fl21027-c449y-01-t3.jpg",
+                                "width": 2048,
+                                "height": 1540,
+                                "imageSize": "ExtraLarge"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/c63a8f6/2147483647/strip/true/crop/2000x1504+0+0/resize/385x290!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F69%2F39%2Fe769f75745ebaebc215604b25ba5%2Fl21027-c449y-01-t3.jpg",
+                                "width": 385,
+                                "height": 290,
+                                "imageSize": "Small"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/8e2dbff/2147483647/strip/true/crop/2000x1504+0+0/resize/800x602!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F69%2F39%2Fe769f75745ebaebc215604b25ba5%2Fl21027-c449y-01-t3.jpg",
+                                "width": 800,
+                                "height": 602,
+                                "imageSize": "Medium"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "L21027_C449Y_02_T3_cropped.jpg",
+                        "renditions": [
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/8f/b5/0be72957460293c0eb93cfd0a40c/l21027-c449y-02-t3-cropped.jpg",
+                                "width": 1408,
+                                "height": 1054,
+                                "imageSize": "Original"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/3552d96/2147483647/strip/true/crop/1408x1054+0+0/resize/1024x767!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F8f%2Fb5%2F0be72957460293c0eb93cfd0a40c%2Fl21027-c449y-02-t3-cropped.jpg",
+                                "width": 1024,
+                                "height": 767,
+                                "imageSize": "Large"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/e6d7557/2147483647/strip/true/crop/1408x1054+0+0/resize/2048x1533!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F8f%2Fb5%2F0be72957460293c0eb93cfd0a40c%2Fl21027-c449y-02-t3-cropped.jpg",
+                                "width": 2048,
+                                "height": 1533,
+                                "imageSize": "ExtraLarge"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/db30afc/2147483647/strip/true/crop/1408x1054+0+0/resize/385x288!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F8f%2Fb5%2F0be72957460293c0eb93cfd0a40c%2Fl21027-c449y-02-t3-cropped.jpg",
+                                "width": 385,
+                                "height": 288,
+                                "imageSize": "Small"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/8f7732e/2147483647/strip/true/crop/1408x1054+0+0/resize/800x599!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F8f%2Fb5%2F0be72957460293c0eb93cfd0a40c%2Fl21027-c449y-02-t3-cropped.jpg",
+                                "width": 800,
+                                "height": 599,
+                                "imageSize": "Medium"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "L21027_C449Y_02_T3.jpg",
+                        "renditions": [
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/2f/41/7136059747af8fef34e256275967/l21027-c449y-02-t3.jpg",
+                                "width": 2000,
+                                "height": 1568,
+                                "imageSize": "Original"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/36cbb04/2147483647/strip/true/crop/2000x1568+0+0/resize/1024x803!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F2f%2F41%2F7136059747af8fef34e256275967%2Fl21027-c449y-02-t3.jpg",
+                                "width": 1024,
+                                "height": 803,
+                                "imageSize": "Large"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/284e758/2147483647/strip/true/crop/2000x1568+0+0/resize/2048x1606!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F2f%2F41%2F7136059747af8fef34e256275967%2Fl21027-c449y-02-t3.jpg",
+                                "width": 2048,
+                                "height": 1606,
+                                "imageSize": "ExtraLarge"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/df0e594/2147483647/strip/true/crop/2000x1568+0+0/resize/385x302!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F2f%2F41%2F7136059747af8fef34e256275967%2Fl21027-c449y-02-t3.jpg",
+                                "width": 385,
+                                "height": 302,
+                                "imageSize": "Small"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/9b1d612/2147483647/strip/true/crop/2000x1568+0+0/resize/800x627!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F2f%2F41%2F7136059747af8fef34e256275967%2Fl21027-c449y-02-t3.jpg",
+                                "width": 800,
+                                "height": 627,
+                                "imageSize": "Medium"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "L21027_C449Y_02_T3_RS.jpg",
+                        "renditions": [
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/09/b6/279e40b141ffbbc2a4ca1595d6c9/l21027-c449y-02-t3-rs.jpg",
+                                "width": 2000,
+                                "height": 1333,
+                                "imageSize": "Original"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/3950f5e/2147483647/strip/true/crop/2000x1333+0+0/resize/1024x682!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F09%2Fb6%2F279e40b141ffbbc2a4ca1595d6c9%2Fl21027-c449y-02-t3-rs.jpg",
+                                "width": 1024,
+                                "height": 682,
+                                "imageSize": "Large"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/35d01c4/2147483647/strip/true/crop/2000x1333+0+0/resize/2048x1365!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F09%2Fb6%2F279e40b141ffbbc2a4ca1595d6c9%2Fl21027-c449y-02-t3-rs.jpg",
+                                "width": 2048,
+                                "height": 1365,
+                                "imageSize": "ExtraLarge"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/6fa3b6b/2147483647/strip/true/crop/2000x1333+0+0/resize/385x257!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F09%2Fb6%2F279e40b141ffbbc2a4ca1595d6c9%2Fl21027-c449y-02-t3-rs.jpg",
+                                "width": 385,
+                                "height": 257,
+                                "imageSize": "Small"
+                            },
+                            {
+                                "url": "https://sothebys-md.brightspotcdn.com/dims4/default/0b76582/2147483647/strip/true/crop/2000x1333+0+0/resize/800x533!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F09%2Fb6%2F279e40b141ffbbc2a4ca1595d6c9%2Fl21027-c449y-02-t3-rs.jpg",
+                                "width": 800,
+                                "height": 533,
+                                "imageSize": "Medium"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "catalogueNote": null,
+            "conditionReport": "<p>Colour:</p><p>Please note the colours in the online catalogue illustration may vary depending on screen settings.</p><p><br></p><p>Condition:</p><p>This work is in very good condition. The sheet is hinged verso to the backing board in all four corners and undulates slightly. There is an artist's pin hole to the centre of the upper edge. Very close inspection reveals some light creasing and very faint accretions in places towards all four edges and a minute nick towards the lower right corner.</p>",
+            "conditionDisclaimer": "<p><em>The lot is sold in the condition it is in at the time of sale. The condition report is provided to assist you with assessing the condition of the lot and is for guidance only. Any reference to condition in the condition report for the lot does not amount to a full description of condition. The images of the lot form part of the condition report for the lot. Certain images of the lot provided online may not accurately reflect the actual condition of the lot. In particular, the online images may represent colors and shades which are different to the lot's actual color and shades. The condition report for the lot may make reference to particular imperfections of the lot but you should note that the lot may have other faults not expressly referred to in the condition report for the lot or shown in the online images of the lot. The condition report may not refer to all faults, restoration, alteration or adaptation. The condition report is a statement of opinion only. For that reason, the condition report is not an alternative to taking your own professional advice regarding the condition of the lot. NOTWITHSTANDING THIS ONLINE CONDITION REPORT OR ANY DISCUSSIONS CONCERNING A LOT, ALL LOTS ARE OFFERED AND SOLD \"AS IS\" IN ACCORDANCE WITH THE CONDITIONS OF SALE/BUSINESS APPLICABLE TO THE RESPECTIVE SALE.</em></p>",
+            "saleroomNotice": null,
+            "provenance": "Galerie Antoine Levi, Paris<br />Acquired from the above by the present owner",
+            "literature": null,
+            "designationLine": null,
+            "acceptsCryptoPayments": false,
+            "withdrawnState": {
+                "state": "NotAffected",
+                "id": "TG90V2l0aGRyYXduU3RhdGVfODJmNDJjMzEtM2VhOS00NTY1LTg4YWItOTc3NTNhYzkxMGUx"
+            },
+            "symbols": [],
+            "parcel": null
+        }
+    }
+}
