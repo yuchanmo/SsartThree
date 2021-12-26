@@ -1,0 +1,676 @@
+{
+    "lang": "en",
+    "main_index_page_length": 12,
+    "main_index_key": "sale",
+    "model_results": {
+        "sale": {
+            "count": 1000,
+            "items": [
+                {
+                    "last_update_time": "2021-12-21 06:20",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "ONLINE",
+                    "image": {
+                        "url": "https:images3.bonhams.comimagesrc=Imageslive2021-110325136524-12-1.jpg&top=0.363333333333&left=0.006993006993&bottom=0.910126182965&right=0.909090909090&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": false,
+                    "dtEndUTC": "2021-12-21 04:00",
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Chinese Paintings",
+                    "iSaleNo": 27658,
+                    "departments_with_lots": [
+                        "PIC-CHI"
+                    ],
+                    "bid_online": false,
+                    "last_updated_lot_time": "2021-12-22 04:28",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Chinese Paintingsdivdiv class='otherLine'The Online Salediv",
+                    "last_session_start_time": "2021-12-14 10:00",
+                    "url": "auctions27658",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-14 10:00",
+                    "run_on_am": true,
+                    "fmt_date": "14 - 21 Dec 2021",
+                    "online_auction_ongoing": {
+                        "ending_js": "",
+                        "ending": "Ended"
+                    },
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "Hong Kong, Admiralty",
+                    "display_status": false,
+                    "name_text": "Chinese Paintings - The Online Sale",
+                    "pk": 27658,
+                    "location_url": "locationsHK",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-17 23:11",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images2.bonhams.comimagesrc=Imageslive2021-111925131403-1-3.jpg&bottom=0.992639327024&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Chinese Works of Art",
+                    "iSaleNo": 26931,
+                    "departments_with_lots": [
+                        "ORI-CHI",
+                        "ORI-JPN",
+                        "ORI-SEA",
+                        "PIC-CHI",
+                        "ORI-CHI",
+                        "ORI-CHI",
+                        "ORI-CHI",
+                        "ORI-CHI"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-21 23:59",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Decorative Asian Works of Artdiv",
+                    "last_session_start_time": "2021-12-17 18:00",
+                    "url": "auctions26931",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-17 18:00",
+                    "run_on_am": false,
+                    "fmt_date": "17 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "Los Angeles",
+                    "display_status": false,
+                    "name_text": "Decorative Asian Works of Art",
+                    "pk": 26931,
+                    "location_url": "locationsLA",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-17 17:22",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "ONLINE",
+                    "image": {
+                        "url": "https:images2.bonhams.comimagesrc=Imageslive2021-110625095854-107-1.jpg&right=0.792500000000&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": false,
+                    "dtEndUTC": "2021-12-16 17:00",
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Books & Manuscripts",
+                    "iSaleNo": 26910,
+                    "departments_with_lots": [
+                        "BOK"
+                    ],
+                    "bid_online": false,
+                    "last_updated_lot_time": "2021-12-17 17:22",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Books and Manuscripts Onlinediv",
+                    "last_session_start_time": "2021-12-07 17:00",
+                    "url": "auctions26910",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-07 17:00",
+                    "run_on_am": true,
+                    "fmt_date": "7 - 16 Dec 2021",
+                    "online_auction_ongoing": {
+                        "ending_js": "",
+                        "ending": "Ended"
+                    },
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "New York",
+                    "display_status": false,
+                    "name_text": "Books and Manuscripts Online",
+                    "pk": 26910,
+                    "location_url": "locationsNYS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-16 21:58",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images2.bonhams.comimagesrc=Imageslive2021-111225143145-1-4.jpg&top=0.040000000000&bottom=0.998990536277&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Chinese Works of Art",
+                    "iSaleNo": 26844,
+                    "departments_with_lots": [
+                        "ORI-CHI",
+                        "ORI-JPN",
+                        "ORI-JPN",
+                        "PIC-CHI",
+                        "ORI-CHI",
+                        "ORI-CHI",
+                        "ORI-CHI"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-21 17:21",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Fine Asian Works of Artdiv",
+                    "last_session_start_time": "2021-12-16 18:00",
+                    "url": "auctions26844",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-16 18:00",
+                    "run_on_am": false,
+                    "fmt_date": "16 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "Los Angeles",
+                    "display_status": false,
+                    "name_text": "Fine Asian Works of Art",
+                    "pk": 26844,
+                    "location_url": "locationsLA",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-20 17:00",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images1.bonhams.comimagesrc=Imageslive2021-092325126271-1-1.jpg&left=0.044715447154&bottom=0.926666666666&right=0.940304878048&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Prints & Multiples",
+                    "iSaleNo": 26784,
+                    "departments_with_lots": [
+                        "PIC-PRT"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-20 18:40",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Prints and Multiplesdiv",
+                    "last_session_start_time": "2021-12-16 14:00",
+                    "url": "auctions26784",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-16 14:00",
+                    "run_on_am": false,
+                    "fmt_date": "16 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "London, New Bond Street",
+                    "display_status": false,
+                    "name_text": "Prints and Multiples",
+                    "pk": 26784,
+                    "location_url": "locationsBS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-17 17:18",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images2.bonhams.comimagesrc=Imageslive2021-111225095854-1-4.jpg&left=0.400000000000&right=0.999658333333&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Books & Manuscripts",
+                    "iSaleNo": 26898,
+                    "departments_with_lots": [
+                        "BOK"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-21 21:27",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Fine Books and Manuscriptsdiv",
+                    "last_session_start_time": "2021-12-15 17:00",
+                    "url": "auctions26898",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-15 17:00",
+                    "run_on_am": false,
+                    "fmt_date": "15 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "New York",
+                    "display_status": false,
+                    "name_text": "Fine Books and Manuscripts",
+                    "pk": 26898,
+                    "location_url": "locationsNYS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-17 12:16",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images1.bonhams.comimagesrc=Imageslive2021-112425137253-1-9.jpg&right=0.990625000000&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Watches",
+                    "iSaleNo": 26687,
+                    "departments_with_lots": [
+                        "WCH"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-21 14:54",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Fine Watchesdiv",
+                    "last_session_start_time": "2021-12-15 14:00",
+                    "url": "auctions26687",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-15 14:00",
+                    "run_on_am": false,
+                    "fmt_date": "15 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "London, New Bond Street",
+                    "display_status": false,
+                    "name_text": "Fine Watches",
+                    "pk": 26687,
+                    "location_url": "locationsBS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-21 14:46",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images1.bonhams.comimagesrc=Imageslive2021-111994623637-1-2.jpg&right=0.978395061728&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Clocks",
+                    "iSaleNo": 26801,
+                    "departments_with_lots": [
+                        "CLK"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-21 19:27",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Fine Clocksdiv",
+                    "last_session_start_time": "2021-12-15 14:00",
+                    "url": "auctions26801",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-15 14:00",
+                    "run_on_am": false,
+                    "fmt_date": "15 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "London, New Bond Street",
+                    "display_status": false,
+                    "name_text": "Fine Clocks",
+                    "pk": 26801,
+                    "location_url": "locationsBS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-15 13:40",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "ONLINE",
+                    "image": {
+                        "url": "https:images1.bonhams.comimagesrc=Imageslive2021-112325120877-2-1.jpg&bottom=0.895899053627&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": false,
+                    "dtEndUTC": "2021-12-15 12:00",
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "African Modern & Contemporary Art",
+                    "iSaleNo": 27024,
+                    "departments_with_lots": [
+                        "PIC-TOP"
+                    ],
+                    "bid_online": false,
+                    "last_updated_lot_time": "2021-12-20 15:36",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Modern & Contemporary African Art Onlinediv",
+                    "last_session_start_time": "2021-12-01 12:00",
+                    "url": "auctions27024",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-01 12:00",
+                    "run_on_am": true,
+                    "fmt_date": "1 - 15 Dec 2021",
+                    "online_auction_ongoing": {
+                        "ending_js": "",
+                        "ending": "Ended"
+                    },
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "London, New Bond Street",
+                    "display_status": false,
+                    "name_text": "Modern & Contemporary African Art Online",
+                    "pk": 27024,
+                    "location_url": "locationsBS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-17 22:41",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "ONLINE",
+                    "image": {
+                        "url": "https:images2.bonhams.comimagesrc=Imageslive2021-102225115315-40-2.jpg&top=0.103333333333&left=0.203333333333&bottom=0.853333333333&right=0.797708333333&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": false,
+                    "dtEndUTC": "2021-12-14 21:00",
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Impressionist and Modern Art",
+                    "iSaleNo": 27435,
+                    "departments_with_lots": [
+                        "PIC-MIC",
+                        "PIC-AMP",
+                        "PIC-PRT"
+                    ],
+                    "bid_online": false,
+                    "last_updated_lot_time": "2021-12-21 00:06",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'The Collection of Amalia de Schulthess Onlinediv",
+                    "last_session_start_time": "2021-12-07 21:00",
+                    "url": "auctions27435",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-02 18:00",
+                    "run_on_am": true,
+                    "fmt_date": "2 - 14 Dec 2021",
+                    "online_auction_ongoing": {
+                        "ending_js": "",
+                        "ending": "Ended"
+                    },
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "Online, Los Angeles",
+                    "display_status": false,
+                    "name_text": "The Collection of Amalia de Schulthess Online",
+                    "pk": 27435,
+                    "location_url": "locationsONLA",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-21 21:31",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "PUBLIC",
+                    "image": {
+                        "url": "https:images2.bonhams.comimagesrc=Imageslive2021-110525150443-1-8.jpg&left=0.012345679012&right=0.990740740740&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": true,
+                    "dtEndUTC": null,
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Modern Decorative Art + Design",
+                    "iSaleNo": 26868,
+                    "departments_with_lots": [
+                        "MDS"
+                    ],
+                    "bid_online": true,
+                    "last_updated_lot_time": "2021-12-21 21:31",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'Modern Decorative Art + Designdiv",
+                    "last_session_start_time": "2021-12-14 19:00",
+                    "url": "auctions26868",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-14 19:00",
+                    "run_on_am": false,
+                    "fmt_date": "14 Dec 2021",
+                    "online_auction_ongoing": {},
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "New York",
+                    "display_status": false,
+                    "name_text": "Modern Decorative Art+Design",
+                    "pk": 26868,
+                    "location_url": "locationsNYS",
+                    "bids_summary": {},
+                    "exhibition": false
+                },
+                {
+                    "last_update_time": "2021-12-21 12:05",
+                    "status": "FINISHED",
+                    "passages": {},
+                    "sale_type": "ONLINE",
+                    "image": {
+                        "url": "https:images1.bonhams.comimagesrc=Imageslive2020-111760130087-2-1.jpg&top=0.062780269058&left=0.446666666666&width=960",
+                        "alt": ""
+                    },
+                    "offer_pre_reg": false,
+                    "dtEndUTC": "2021-12-14 13:00",
+                    "flagged_summary": {
+                        "lots_flagged": 0
+                    },
+                    "department": "Automobilia",
+                    "iSaleNo": 26954,
+                    "departments_with_lots": [
+                        "MOT-AUT"
+                    ],
+                    "bid_online": false,
+                    "last_updated_lot_time": "2021-12-21 12:05",
+                    "registration_details": null,
+                    "day_of_sale": true,
+                    "name": "div class='firstLine'The Winter Automobilia Online Auctiondiv",
+                    "last_session_start_time": "2021-12-01 13:00",
+                    "url": "auctions26954",
+                    "consigned_summary": {
+                        "unsold": 0,
+                        "sold": 0,
+                        "pending_sale": 0
+                    },
+                    "dtStartUTC": "2021-12-01 13:00",
+                    "run_on_am": true,
+                    "fmt_date": "1 - 14 Dec 2021",
+                    "online_auction_ongoing": {
+                        "ending_js": "",
+                        "ending": "Ended"
+                    },
+                    "flags": {
+                        "B": false,
+                        "F": false,
+                        "N": false,
+                        "P": false,
+                        "R": false,
+                        "X": false
+                    },
+                    "location": "London, New Bond Street",
+                    "display_status": false,
+                    "name_text": "The Winter Automobilia Online Auction",
+                    "pk": 26954,
+                    "location_url": "locationsBS",
+                    "bids_summary": {},
+                    "exhibition": false
+                }
+            ],
+            "total_count": 8260
+        }
+    },
+    "main_index_page": 1,
+    "filters": {},
+    "main_index_filters": null,
+    "currency_dict": {
+        "currency_pref": "USD",
+        "currency_screen": null
+    },
+    "main_index_page_lengths": [
+        {
+            "value": 12,
+            "label": 12
+        },
+        {
+            "value": 48,
+            "label": 48
+        },
+        {
+            "value": 96,
+            "label": 96
+        }
+    ]
+}

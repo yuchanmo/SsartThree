@@ -69,7 +69,7 @@ for i,f in files:
     except Exception as e:
         pass
 df = pd.DataFrame(rows_list)
-df.to_csv('seoul_1029.csv',encoding='utf-8-sig')
+df.to_csv('seoul_1209.csv',encoding='utf-8-sig')
 
 
 
